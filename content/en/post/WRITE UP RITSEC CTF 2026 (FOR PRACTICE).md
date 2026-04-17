@@ -14,38 +14,36 @@ type: "post"
 image: "/images/avatar.jpg"
 ---
 <style>
-  /* 1. Chỉ bung rộng những ảnh thực sự nằm trong nội dung bài viết */
-  /* Loại trừ avatar dựa trên cấu trúc common của theme Brewm */
-  article .post-content img, 
-  article section img {
-    width: 100% !important;
-    height: auto !important;
-    display: block;
-    margin: 20px auto;
-  }
-
-  /* 2. Khống chế cái avatar quay về kích thước bình thường */
-  /* Chúng ta nhắm vào thẻ bao quanh avatar */
-  #body-header img, 
-  .author-photo img, 
-  header img,
-  img[src*="author"], 
-  img[alt*="niddalA"] { 
-    width: 80px !important;   /* Độ rộng vừa phải cho avatar */
-    height: 80px !important;  /* Chiều cao tương ứng */
-    max-width: 80px !important;
-    border-radius: 50% !important; /* Giữ ảnh hình tròn */
+  /* 1. THU NHỎ AVATAR XUỐNG MỨC TINH TẾ (50px) */
+  /* Nhắm chính xác vào thẻ img của avatar để không bắt nhầm ảnh bài viết */
+  header img, 
+  [class*="author"] img, 
+  img[alt*="niddalA"] {
+    width: 50px !important;    /* Chỉnh số này nếu muốn to/nhỏ hơn tí nữa */
+    height: 50px !important;
+    max-width: 50px !important;
+    border-radius: 50% !important;
     object-fit: cover !important;
-    display: inline-block !important; /* Trả về dạng inline để không chiếm hết dòng */
-    margin: 0 !important;
+    display: inline-block !important;
+    vertical-align: middle !important; /* Căn giữa với dòng chữ tên bạn */
+    margin-right: 10px !important;   /* Tạo khoảng cách với tên "niddalA" */
   }
 
-  /* 3. Đảm bảo chữ vẫn vươn hết dòng như cũ */
+  /* 2. ĐẢM BẢO CHỮ VẪN TRÀN LỀ ĐẸP */
   article p, article li {
     text-indent: 0 !important;
     max-width: 100% !important;
     width: 100% !important;
     text-align: left !important;
+    margin-bottom: 1.2em !important; /* Giãn dòng giữa các đoạn văn cho dễ đọc */
+  }
+
+  /* 3. ẢNH TRONG BÀI VIẾT VẪN TO RÕ RÀNG */
+  .post-content img, section img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 25px 0 !important;
   }
 </style>
 # WRITE UP RISEC CTF 2026 (FOR PRACTICE)
