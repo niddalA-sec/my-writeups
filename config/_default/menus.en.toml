@@ -273,6 +273,6 @@
 
 [[contrib]]
   identifier = 'githubsponsors'
-  url        = 'https://github.com/sponsors/foxihd/'
+  url        = 'https://github.com/sponsors/niddala-sec/'
   name       = 'Become Github Sponsors'
   pre        = 'githubsponsors'

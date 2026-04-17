@@ -1,6 +1,7 @@
 ---
 title: "WRITE UP RISEC CTF 2026"
 date: 2026-04-06
+lastmod: 2026-04-17 
 description: "Writes up Risec CTF 2026 - PWN"
 draft: false
 author: "niddalA"
@@ -8,9 +9,11 @@ tags: ["CTF", "Pwn", "Risec CTF"]
 categories: ["Writeups"]
 cover: 'https://ctf.ritsec.club/assets/images/ritsec-26_logo.png'
 stage: 'evergreen'
+colophon: true 
 ---
 # WRITE UP RISEC CTF 2026 (FOR PRACTICE)
 Author: niddalA
+![alt text](image.png)
 Date: 06/04/2026
 Credit: ![image](https://hackmd.io/_uploads/Bk0mnieh-g.png)
 (Tham khảo bài 2,3,4 - Đã chỉnh sửa lại một số chỗ)
@@ -210,7 +213,7 @@ while (readprogram(&var_20, 0) == 0) {
 Điểm mấu chốt nằm ở cách hàm runprogram (tại 0x400890) thiết lập Stack Frame trên kiến trúc AArch64.
 
 Dựa trên mã máy:
-```
+```bash
 00400890  sub  sp, sp, #0x820     ; Cấp phát 0x820 bytes
 00400894  stp  fp, lr, [sp]       ; Lưu Frame Pointer và Link Register (Return Address)
 00400898  mov  fp, sp             ; FP trỏ vào đáy stack hiện tại
@@ -218,7 +221,7 @@ Dựa trên mã máy:
 Trong AArch64, lr (Link Register - địa chỉ trả về) được lưu tại [sp + 0x8]. Ngay phía trên nó, từ [sp + 0x10] trở đi, là vùng nhớ dành cho VM Stack.
 #### Lỗ hổng Underflow tại hàm Pop:
 Máy ảo sử dụng một con trỏ toàn cục `data_4a1968` để quản lý đỉnh ngăn xếp của nó (VM SP). Hãy nhìn vào hàm pop tại 0x40083c:
-```
+```bash
 0040083c    data_4a1968 -= 8        // Giảm con trỏ VM SP đi 8 đơn vị (lùi về 1 slot)
 00400850    result.q = *data_4a1968 // Trả về giá trị tại vị trí mới
 00400854    return result
