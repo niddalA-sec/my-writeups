@@ -4,7 +4,7 @@ date: 2026-04-06
 lastmod: 2026-04-17 
 description: "Writes up Risec CTF 2026 - PWN"
 draft: false
-author: ["niddala"]
+author: "Author Name"
 tags: ["CTF", "Pwn", "Risec CTF"]
 categories: ["Writeups"]
 cover: 'https://ctf.ritsec.club/assets/images/ritsec-26_logo.png'

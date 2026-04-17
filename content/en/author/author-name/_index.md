@@ -2,7 +2,7 @@
 title: 'niddalA'
 cover: '/images/avatar.jpg'
 alt: ''
-flair: 'Available for hire (example flair)'
+flair: 'Available for hire'
 ---
 
 ## Author Name
