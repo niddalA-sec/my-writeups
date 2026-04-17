@@ -1,21 +1,19 @@
 ---
-title: "WRITE UP RISEC CTF 2026"
+title: "WRITE UP RITSEC CTF 2026"
 date: 2026-04-06
 lastmod: 2026-04-17 
 description: "Writes up Risec CTF 2026 - PWN"
 draft: false
-author: "niddalA"
+author: ["niddalA"]
 tags: ["CTF", "Pwn", "Risec CTF"]
 categories: ["Writeups"]
 cover: 'https://ctf.ritsec.club/assets/images/ritsec-26_logo.png'
 stage: 'evergreen'
 colophon: true 
+type: "post"
 image: "/images/avatar.png"
 ---
 # WRITE UP RISEC CTF 2026 (FOR PRACTICE)
-Author: niddalA
-![alt text](image.png)
-Date: 06/04/2026
 Credit: ![image](https://hackmd.io/_uploads/Bk0mnieh-g.png)
 (Tham khảo bài 2,3,4 - Đã chỉnh sửa lại một số chỗ)
 ## 1. BAKE A PIE
