@@ -1,5 +1,5 @@
 ## Base URL for the site
-baseURL = 'https://niddalA-sec.github.io/my-writeups/'
+baseURL = 'https://niddala-sec.github.io/my-writeups/'
 ## Site title
 title = 'niddalA'
 ## Use hugo-brewm theme
