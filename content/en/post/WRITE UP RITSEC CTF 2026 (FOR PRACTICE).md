@@ -4,14 +4,14 @@ date: 2026-04-06
 lastmod: 2026-04-17 
 description: "Writes up Risec CTF 2026 - PWN"
 draft: false
-author: ["niddalA"]
+author: ["niddala"]
 tags: ["CTF", "Pwn", "Risec CTF"]
 categories: ["Writeups"]
 cover: 'https://ctf.ritsec.club/assets/images/ritsec-26_logo.png'
 stage: 'evergreen'
 colophon: true 
 type: "post"
-image: "/images/avatar.png"
+image: "/images/avatar.jpg"
 ---
 # WRITE UP RISEC CTF 2026 (FOR PRACTICE)
 Credit: ![image](https://hackmd.io/_uploads/Bk0mnieh-g.png)
