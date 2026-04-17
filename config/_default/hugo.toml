@@ -224,7 +224,7 @@ enableRobotsTXT = true
         ## Serif font selection
         roman = 'crimson'
         ## Sans-serif font selection
-        sans = 'inter'
+        sans = 'be vietnam pro'
         ## use typeface stored in local server (pleaase download font's uri first)
         localHost = false
 

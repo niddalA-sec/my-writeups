@@ -14,14 +14,30 @@ type: "post"
 image: "/images/avatar.jpg"
 ---
 <style>
-  /* Chỉ sửa đúng trong bài này, không ảnh hưởng toàn trang */
-  p {
-    text-indent: 0 !important;   /* Bỏ thụt lề đầu dòng */
-    text-align: left !important; /* Căn trái toàn bộ */
+  /* 1. Chỉ phóng to ảnh trong nội dung, KHÔNG phóng to avatar */
+  article img:not([class*="avatar"]) {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 20px auto;
   }
-  img {
-    width: 100% !important;      /* Giãn ảnh bằng chiều ngang chữ */
-    height: auto;
+
+  /* 2. Ép avatar giữ nguyên hình dáng ban đầu */
+  img[class*="avatar"], .author-photo img {
+    width: 80px !important;  /* Hoặc kích thước bạn muốn */
+    height: 80px !important;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  /* 3. Bỏ thụt lề và cho chữ vươn hết chiều ngang bài viết */
+  article p, article li {
+    text-indent: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    text-align: left !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
   }
 </style>
 # WRITE UP RISEC CTF 2026 (FOR PRACTICE)
