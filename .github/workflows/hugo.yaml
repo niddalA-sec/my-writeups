@@ -17,17 +17,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # Tải theme về
-          fetch-depth: 0        # Lấy lịch sử git
+          submodules: recursive
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.160.1' # Khớp với bản ở máy bạn
-          extended: true         # Bản extended để xử lý CSS
+          hugo-version: '0.160.1'
+          extended: true
 
-      - name: Build
+      - name: Build with Hugo
         run: hugo --minify
+
+      # --- BƯỚC QUAN TRỌNG ĐỂ HIỆN KHUNG SEARCH ---
+      - name: Index with Pagefind
+        run: npx pagefind --site public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
