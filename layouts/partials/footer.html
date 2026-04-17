@@ -75,14 +75,27 @@
     {{- end }}
 {{- end }}
 
+<style>
+  /* Chỉ tập trung sửa đúng phần nội dung bài viết, không động vào khung hệ thống */
+  article .post-content p, 
+  article .post-content li {
+    font-family: sans-serif !important; /* Dùng font hệ thống cho an toàn trước */
+    text-indent: 0 !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  /* Làm ảnh to ra nhưng không phá khung */
+  article img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+</style>
+
 <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    // Cứ là thẻ <img> thì cho zoom hết, không nói nhiều
-    mediumZoom('img', {
-      margin: 0,           // Phóng to tràn viền luôn
-      background: '#000',  // Nền đen thui cho nó nổi
-      scrollOffset: 0      // Cuộn chuột cũng không thoát được zoom
-    })
+    mediumZoom('article img'); // Chỉ zoom ảnh trong bài viết cho chắc chắn
   });
 </script>
