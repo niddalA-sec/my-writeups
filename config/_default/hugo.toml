@@ -52,13 +52,14 @@ enableRobotsTXT = true
         ## Starting line number
         lineNoStart = 1
         ## Show line numbers
-        lineNos = false
+        lineNos = true
         ## Put line numbers in table
         lineNumbersInTable = true
         ## Use classes for styling
-        noClasses = false
+        noClasses = true
         ## Width of tab character
         tabWidth = 4
+        style = "monokai"
 
     ## Goldmark markdown processor settings
     [markup.goldmark]
