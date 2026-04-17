@@ -1,6 +1,6 @@
 ---
 type: 'slide'
-title: 'This is slide'
+title: 'THE PWN MINDSET'
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/28.svg'
 weight: 1
 params:
@@ -8,7 +8,12 @@ params:
     target: 'https://github.com/foxihd/hugo-brewm'
 ---
 
-This demonstrates an example of three slide item. The navigation will change when there are three or more slides.
+## Pwn or Die
+For me, Pwn is not just about "getting a shell"; it's the art of understanding how a computer operates at its most fundamental level.
 
-This is slide layout with cover image in frontmatter.
-For a minimalist home page without a slide and flowlines, see the [Indonesian homepage](https://foxihd.github.io/hugo-brewm/id/).
+**Current Research:**
+- Linux Heap Exploitation (Glibc)
+- Kernel Pwn & Driver Exploitation
+- Advanced ROP & Ret2Libc
+
+"In a world of 0s and 1s, I'm looking for the overflow."
