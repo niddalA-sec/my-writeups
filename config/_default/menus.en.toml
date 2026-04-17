@@ -1,8 +1,8 @@
 [[main]]
-  name       = 'Fork!'
-  identifier = 'fork'
+  name       = 'Github'
+  identifier = 'Github'
   weight     = 3
-  url        = 'https://github.com/foxihd/hugo-brewm'
+  url        = 'https://github.com/niddalA-sec'
   pre        = 'github'
   [[main.params]]
     target   = '_blank'
@@ -136,8 +136,8 @@
       parent     = 'series.sdg'
 
 [[main]]
-  name       = 'Works'
-  identifier = 'works'
+  name       = 'Projects'
+  identifier = 'Projects'
   pageRef    = '/'
   weight     = 2
 
