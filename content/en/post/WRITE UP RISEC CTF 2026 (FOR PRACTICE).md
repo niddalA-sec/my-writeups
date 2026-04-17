@@ -10,6 +10,7 @@ categories: ["Writeups"]
 cover: 'https://ctf.ritsec.club/assets/images/ritsec-26_logo.png'
 stage: 'evergreen'
 colophon: true 
+image: "/images/avatar.png"
 ---
 # WRITE UP RISEC CTF 2026 (FOR PRACTICE)
 Author: niddalA
