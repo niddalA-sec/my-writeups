@@ -222,7 +222,7 @@ enableRobotsTXT = true
         ## Use web safe fonts (will overide font selection below)
         webSafe = false
         ## Serif font selection
-        roman = 'inter'
+        roman = 'crimson'
         ## Sans-serif font selection
         sans = 'inter'
         ## use typeface stored in local server (pleaase download font's uri first)

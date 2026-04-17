@@ -13,6 +13,17 @@ colophon: true
 type: "post"
 image: "/images/avatar.jpg"
 ---
+<style>
+  /* Chỉ sửa đúng trong bài này, không ảnh hưởng toàn trang */
+  p {
+    text-indent: 0 !important;   /* Bỏ thụt lề đầu dòng */
+    text-align: left !important; /* Căn trái toàn bộ */
+  }
+  img {
+    width: 100% !important;      /* Giãn ảnh bằng chiều ngang chữ */
+    height: auto;
+  }
+</style>
 # WRITE UP RISEC CTF 2026 (FOR PRACTICE)
 Credit: ![image](https://hackmd.io/_uploads/Bk0mnieh-g.png)
 (Tham khảo bài 2,3,4 - Đã chỉnh sửa lại một số chỗ)
