@@ -75,62 +75,14 @@
     {{- end }}
 {{- end }}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
-
-<style>
-  /* Ép toàn bộ web dùng font mới và bung rộng khung hình */
-  :root {
-    --pagewidth: 95% !important; /* Ép theme dùng 95% màn hình thay vì bị bóp hẹp */
-  }
-
-  body, section, article, p, li, span, a {
-    font-family: 'Be Vietnam Pro', sans-serif !important;
-    text-indent: 0 !important;       /* Xóa sổ mọi loại thụt đầu dòng */
-  }
-
-  /* Ép phần nội dung (p, li) phải rộng bằng tiêu đề */
-  article p, .post-content p, main p, li {
-    max-width: 100% !important;      /* Bung hết dòng */
-    width: 100% !important;
-    margin-left: 0 !important;       /* Sát lề trái */
-    margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    text-align: left !important;     /* Căn trái cho dễ đọc bài Writeup */
-    line-height: 1.7;                /* Giãn dòng cho thoáng mắt */
-  }
-
-  /* Ép ảnh phải giãn ra tối đa khung hình */
-  article img, main img {
-    display: block !important;
-    max-width: 100% !important;      /* Ảnh to bằng dòng chữ */
-    width: auto !important;
-    margin: 20px 0 !important;       /* Cách trên dưới một chút cho đẹp */
-    height: auto !important;
-  }
-
-  /* Font cho Code - dân CTF nhìn phát biết ngay chuyên nghiệp */
-  code, pre {
-    font-family: 'JetBrains Mono', monospace !important;
-    font-size: 0.95em !important;
-  }
-
-  /* Xóa bỏ khoảng trống thừa ở các container bao quanh bài viết */
-  .pagewidth, #main-header, #main-footer, article {
-    max-width: 95% !important;
-    width: 95% !important;
-  }
-</style>
-
 <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+    // Cứ là thẻ <img> thì cho zoom hết, không nói nhiều
     mediumZoom('img', {
-      margin: 20,
-      background: 'rgba(0,0,0,0.9)',
-      scrollOffset: 0
+      margin: 0,           // Phóng to tràn viền luôn
+      background: '#000',  // Nền đen thui cho nó nổi
+      scrollOffset: 0      // Cuộn chuột cũng không thoát được zoom
     })
   });
 </script>
