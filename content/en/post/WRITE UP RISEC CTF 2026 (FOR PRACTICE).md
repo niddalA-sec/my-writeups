@@ -193,9 +193,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-```
-FLAG: RS{wh3r3_h4s_4ll_th3_rum_g0n3_mr_m0nk3y_m4n?}
-```
+`FLAG: RS{wh3r3_h4s_4ll_th3_rum_g0n3_mr_m0nk3y_m4n?}`
 ## 3. Marauder Might
 ![image](https://hackmd.io/_uploads/H1VNcsg2-e.png)
 Tổng quan: Một máy ảo (Virtual Machine) tùy chỉnh có lỗi logic trong việc quản lý ngăn xếp (Stack Management).
@@ -260,9 +258,7 @@ io = remote("marauder-might.ctf.ritsec.club", 1739)
 io.send(payload)
 io.interactive()
 ```
-```bash
-FLAG: RS{th3_G4rc1a_0F_gr4pp1in6}
-```
+`FLAG: RS{th3_G4rc1a_0F_gr4pp1in6}`
 ## 4. Carening
 ![image](https://hackmd.io/_uploads/rJEss3e3Wl.png)
 
@@ -340,6 +336,4 @@ shell.send(post_payload)
 log.success("Đã gửi payload. Đang chuyển sang chế độ tương tác...")
 shell.interactive()
 ```
-```bash
-FLAG: RS{CFI_b1ind_sp0t_g0t_us3d_4g41n5t_b04rd_53cur1ty}
-```
+`FLAG: RS{CFI_b1ind_sp0t_g0t_us3d_4g41n5t_b04rd_53cur1ty}`
