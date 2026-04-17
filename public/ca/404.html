@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ca-ES" dir="ltr">
+<head><script src="/my-writeups/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=my-writeups/livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Pàgina no trobada</title>
+    <meta http-equiv="refresh" content="15;url=http://localhost:1313/my-writeups/ca/">
+    <!-- css.html -->
+            <link rel="stylesheet" href="http://localhost:1313/my-writeups/hugo-brewm.min.css">
+
+
+<style>
+        h1 {--anm: fade 15s forwards;-webkit-animation: var(--anm);-moz-animation: var(--anm);-o-animation: var(--anm);animation: var(--anm);font-size: 5rem;}
+        h1::after {font-size: 2rem}
+        @keyframes fade {0% {opacity: 1} 100% {opacity: 0}}
+        @-webkit-keyframes fade {0% {opacity: 1} 100% {opacity: 0}}
+    </style>
+</head>
+<body id="page404">
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true"></div>
+    
+    <nav aria-label="Ometre">
+        <a id="to-content" href="#list-posts" aria-label="Salta al contingut principal">
+            <span>Salta al contingut principal</span>
+            <kbd class="key" aria-hidden="true" data-key="c"></kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+    <!-- logo.html -->
+    <div id="logo">
+        <a href="http://localhost:1313/my-writeups/ca/" aria-label="niddalA" aria-description="Inici"><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="196pt" aria-label="niddalA">
+                        <text id="logotype__text" y="19.5pt" x="0">niddalA</text>
+                    </svg>
+        </a>
+        <hr class="hide"/>
+    </div>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t">Navegació</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Inici">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-labelledby="search-label" aria-keyshortcuts="q">
+        <span id="search-label" class="t srt">Cerca</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Cerca"
+                    }
+                });
+                
+                const pFInput = document.querySelector('.pagefind-ui__search-input');
+                if (pFInput) {
+                    pFInput.setAttribute('aria-label', pFInput.getAttribute('placeholder'));
+                    pFInput.setAttribute('name', pFInput.getAttribute('placeholder'));
+                }
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="[i18n] seach" action="//duckduckgo.com/"
+        role="search" aria-label="Cerca">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Cerca" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Cerca">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="Cerca" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+
+            <!-- menu.html -->
+            <!-- i18n.html -->
+        <details id="has-i18n" class="presentation js-details srm" name="on-deck">
+                <summary class="anchor on-deck"
+                    aria-label="Selecció d&#39;idioma"
+                    aria-description="L&#39;idioma actual és Català">
+                    <span class="emoji">🇪🇸&nbsp;</span>
+                    <span class="iso639">CA </span>
+                    <span class="languangeName">Català</span>
+                </summary>
+
+            <!-- on hull -->
+            <nav id="i18n-menu" aria-label="Selecció d&#39;idioma">
+                <ul class="on-plank">
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/" aria-label="Change language to English">
+                                <span class="emoji">🇺🇸&nbsp;</span>
+                                <span class="languangeName">English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/id/" aria-label="Change language to Bahasa Indonesia">
+                                <span class="emoji">🇮🇩&nbsp;</span>
+                                <span class="languangeName">Bahasa Indonesia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/hi/" aria-label="Change language to हिन्दी">
+                                <span class="emoji">🇮🇳&nbsp;</span>
+                                <span class="languangeName">हिन्दी</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/de/" aria-label="Change language to Deutsch">
+                                <span class="emoji">🇩🇪&nbsp;</span>
+                                <span class="languangeName">Deutsch</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/es/" aria-label="Change language to Español">
+                                <span class="emoji">🇪🇸&nbsp;</span>
+                                <span class="languangeName">Español</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/es-mx/" aria-label="Change language to Español (México)">
+                                <span class="emoji">🇲🇽&nbsp;</span>
+                                <span class="languangeName">Español (México)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/fr/" aria-label="Change language to French">
+                                <span class="emoji">🇫🇷&nbsp;</span>
+                                <span class="languangeName">French</span>
+                            </a>
+                        </li>
+                </ul>
+                <div class="screening js-cgpn" role="presentation" aria-hidden="true"></div>
+            </nav>
+        </details>
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+        <hr class="hide"/>
+    </details>
+</header>
+    <main class="pagewidth" style="display: flex; flex-direction: column; min-height: var(--vbody);">
+        <div class="textwidth" style="margin:auto;">
+            <h1 class="has-aria-label" aria-label="Pàgina no trobada">404</h1>
+            <p role="alert">Aquesta pàgina redirigeix intencionadament <a href="/" class="loading">tornar a la pàgina d&#39;inici</a></p>
+        </div>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true"></div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary"
+    data-i18n-accessibility="Accessibilitat"
+    data-i18n-optimizeSR="Optimització per a lectors de pantalla"
+    data-i18n-optimizeSRdesc="Optimitza la visualització i els recursos per a usuaris de lectors de pantalla que naveguen amb un dispositiu amb punter."
+    data-i18n-colorSettings="Configuració de colors"
+    data-i18n-darkMode="Mode fosc"
+    data-i18n-light="Clar"
+    data-i18n-dark="Fosc"
+    data-i18n-contrast="Contrast"
+    data-i18n-lessContrast="Baix"
+    data-i18n-moreContrast="Alt"
+    data-i18n-defaultContrast="Per defecte"
+    data-i18n-colorPalette="Paleta de colors"
+    data-i18n-defaultColor="Per defecte"
+    data-i18n-deuteranopia="Deuteranòpia"
+    data-i18n-protanopia="Protanòpia"
+    data-i18n-tritanopia="Tritanòpia"
+    data-i18n-monochrome="Monocrom"
+    data-i18n-fontSize="Mida de la lletra"
+    data-i18n-baselineStretch="Baseline Stretch"
+    data-i18n-OpenDyslexic="Utilitza la font OpenDyslexic"
+    data-i18n-menuControls="Controls del menú d&#39;accessibilitat"
+    data-i18n-save="Desa"
+    data-i18n-reset="Restableix"
+    data-i18n-close="Tancar"
+    data-i18n-bionRead="Mode BionRead"
+    data-i18n-focusMode="Mode concentració"
+    data-i18n-noLocalStorage="LocalStorage no està disponible al teu navegador. No es desaran els ajustos.">
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Ometre">
+        <a id="to-top" class="srm" href="#top" title="Torna a dalt" accesskey="c" aria-keyshortcuts="c" aria-label="Torna a dalt">
+            <span class="t srt">Torna a dalt</span>
+            <kbd class="key" aria-hidden="true" data-key="c"></kbd>
+        </a>
+    </nav>
+</footer>
+    <div id="background-body" role="presentation"></div>
+</body>
+</html>

@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" >
   <channel>
-    <title>Categories on My New Hugo Project</title>
-    <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on My New Hugo Project</description>
-    <generator>Hugo</generator>
+    <title>Categories on niddalA</title>
+    <link>http://localhost:1313/my-writeups/categories/</link>
+    <description>Recent Posts in Categories on niddalA</description>
+    <generator>Hugo 0.160.1</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>hotrungdan3007@gmail.com (niddalA)</managingEditor>
+    <webMaster>hotrungdan3007@gmail.com (niddalA)</webMaster>
+    <lastBuildDate>Fri, 17 Apr 2026 13:17:20 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/my-writeups/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/my-writeups/de/categories/index.xml" hreflang="de" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/es/categories/index.xml" hreflang="es" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/es-mx/categories/index.xml" hreflang="es-mx" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/fr/categories/index.xml" hreflang="fr" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/hi/categories/index.xml" hreflang="hi" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/id/categories/index.xml" hreflang="id" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/ca/categories/index.xml" hreflang="ca" rel="alternate" type="application/rss&#43;xml" />
+        
+    <item>
+      <title>Latex</title>
+      <link>http://localhost:1313/my-writeups/categories/latex/</link>
+      <pubDate>Fri, 06 Feb 2026 13:56:01 -0800</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/categories/latex/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+    <item>
+      <title>Authoring</title>
+      <link>http://localhost:1313/my-writeups/categories/authoring/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/categories/authoring/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+    <item>
+      <title>Configuration</title>
+      <link>http://localhost:1313/my-writeups/categories/configuration/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/categories/configuration/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+    <item>
+      <title>Homepage</title>
+      <link>http://localhost:1313/my-writeups/categories/homepage/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/categories/homepage/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
   </channel>
 </rss>

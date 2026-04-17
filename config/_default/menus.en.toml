@@ -237,24 +237,24 @@
           parent     = 'more.menu.that.never.too'
 
 [[footer]]
-  identifier = 'figma'
-  pageRef    = '/'
+  identifier = 'facebook'
+  url        = 'https://www.facebook.com/dan.ho.182325'
   weight     = 1
-  name       = 'figma'
-  pre        = 'figma'
+  name       = 'Facebook'
+  pre        = 'Facebook'
 
 [[footer]]
-  identifier = 'hashnode'
-  pageRef    = '/'
+  identifier = 'X'
+  url        = 'https://x.com/niddalA'
   weight     = 2
-  name       = 'hashnode'
-  pre        = 'hashnode'
+  name       = 'X'
+  pre        = 'X'
 
 [[footer]]
   identifier = 'email'
-  pageRef    = '/'
+  url        = 'mailto:hotrungdan3007@gmail.com'
   weight     = 3
-  name       = 'email'
+  name       = 'Email'
   pre        = 'email'
 
 [[footer]]

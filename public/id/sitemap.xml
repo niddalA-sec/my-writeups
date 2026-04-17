@@ -1,0 +1,102 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/author/</loc>
+    
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/author/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/author/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/author/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/author/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/author/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/author/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/author/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/author/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/categories/</loc>
+    
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/categories/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/categories/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/categories/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/categories/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/categories/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/categories/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/categories/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/categories/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/</loc>
+    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/en/</loc>
+    
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/en/stage/evergreen/</loc>
+    
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/evergreen/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/evergreen/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/stage/evergreen/</loc>
+    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/evergreen/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/evergreen/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/en/stage/</loc>
+    
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/stage/</loc>
+    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/en/stage/budding/</loc>
+    
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/budding/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/budding/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/budding/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/budding/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/stage/budding/</loc>
+    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/budding/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/budding/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/budding/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/budding/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/en/stage/seedling/</loc>
+    
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/seedling/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/seedling/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/seedling/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/seedling/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/stage/seedling/</loc>
+    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/seedling/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/seedling/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/seedling/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/seedling/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/series/</loc>
+    
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/series/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/series/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/series/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/series/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/series/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/series/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/series/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/series/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/id/tags/</loc>
+    
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/tags/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/tags/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/tags/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/tags/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/tags/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/tags/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/tags/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/tags/" />
+  </url>
+</urlset>

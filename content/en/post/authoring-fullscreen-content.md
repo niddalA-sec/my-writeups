@@ -5,7 +5,7 @@ description: "A guide on creating pages with fullscreen layout"
 draft: false
 author: "Author Name"
 type: "post"
-tags: ["authoring", "content", "media", "map"]
+tags: ["PWN", "DAMN", "media", "map"]
 categories: ["authoring"]
 cover: ''
 alt: ''

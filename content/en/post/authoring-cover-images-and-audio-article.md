@@ -5,7 +5,7 @@ description: "A guide on adding cover images and audio articles"
 draft: false
 author: "Author Name"
 type: "post"
-tags: ["authoring", "content", "media", "audio", "cover", "images", "alt"]
+tags: ["aaaaaaaaaaa", "content", "media", "audio", "cover", "images", "alt"]
 categories: ["authoring"]
 cover: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_and_styrofoam_%E2%80%93_electrostatic_charge_%28235112299%29.jpg'
 alt: 'Cat named Cooper with styrofoam on his fur due to electrostatic charge.'

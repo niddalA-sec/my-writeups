@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" >
+  <channel>
+    <title>Categories on niddalA</title>
+    <link>http://localhost:1313/my-writeups/de/categories/</link>
+    <description>Neueste Beiträge in Categories am niddalA</description>
+    <generator>Hugo 0.160.1</generator>
+    <language>de-DE</language>
+    <managingEditor>hotrungdan3007@gmail.com (niddalA)</managingEditor>
+    <webMaster>hotrungdan3007@gmail.com (niddalA)</webMaster>
+    <lastBuildDate>Fri, 17 Apr 2026 13:17:19 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/my-writeups/de/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/my-writeups/categories/index.xml" hreflang="en" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/hi/categories/index.xml" hreflang="hi" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/id/categories/index.xml" hreflang="id" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/ca/categories/index.xml" hreflang="ca" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/es/categories/index.xml" hreflang="es" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/es-mx/categories/index.xml" hreflang="es-mx" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/fr/categories/index.xml" hreflang="fr" rel="alternate" type="application/rss&#43;xml" />
+        
+  </channel>
+</rss>

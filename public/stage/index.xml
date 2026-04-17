@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" >
+  <channel>
+    <title>Stage on niddalA</title>
+    <link>http://localhost:1313/my-writeups/stage/</link>
+    <description>Recent Posts in Stage on niddalA</description>
+    <generator>Hugo 0.160.1</generator>
+    <language>en-us</language>
+    <managingEditor>hotrungdan3007@gmail.com (niddalA)</managingEditor>
+    <webMaster>hotrungdan3007@gmail.com (niddalA)</webMaster>
+    <lastBuildDate>Fri, 17 Apr 2026 13:17:20 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/my-writeups/stage/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/my-writeups/id/stage/index.xml" hreflang="id" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/id/en/stage/index.xml" hreflang="id" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/en/stage/index.xml" hreflang="en" rel="alternate" type="application/rss&#43;xml" />
+        
+    <item>
+      <title>budding</title>
+      <link>http://localhost:1313/my-writeups/stage/budding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/stage/budding/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+    <item>
+      <title>evergreen</title>
+      <link>http://localhost:1313/my-writeups/stage/evergreen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/stage/evergreen/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+    <item>
+      <title>seedling</title>
+      <link>http://localhost:1313/my-writeups/stage/seedling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/stage/seedling/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+  </channel>
+</rss>

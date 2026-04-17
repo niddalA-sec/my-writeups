@@ -1,17 +1,17 @@
 ## Base URL for the site
-baseURL = 'https://foxihd.github.io/hugo-brewm/'
+baseURL = 'https://niddalA-sec.github.io/my-writeups/'
 ## Site title
-title = 'Example'
+title = 'niddalA'
 ## Use hugo-brewm theme
 theme = 'hugo-brewm'
 ## Enable Git information for pages, (e.g. lastMod date information)
 enableGitInfo = true
 ## Convert all URLs to absolute URLs
-canonifyURLs = true
+canonifyURLs = false
 ## Default language for content
 defaultContentLanguage = 'en'
 ## Put default language in subdirectory
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 ## Show placeholder for missing translations
 enableMissingTranslationPlaceholders = true
 ## Use sections for main menu
@@ -106,11 +106,11 @@ enableRobotsTXT = true
 ## Site parameters
 [params]
     ## Site title
-    title = "Example"
+    title = "niddalA"
     ## Site description
     description = "An ExampleSite built with Hugo and Hugo-Brewm theme"
     ## Copyright notice
-    copyright = "Copyleft 2025 &copy; Author"
+    copyright = "Copyleft 2026 © niddalA"
     ## Hide "powered by hugo" on colophon
     # HideHugoCredit = true
     ## Enable extended metadata (social cards)
@@ -131,9 +131,9 @@ enableRobotsTXT = true
     ## Author information
     [params.author]
         ## site author's name
-        name = 'Author Name'
+        name = 'niddalA'
         ## Author's email (will be used for RSS feed)
-        email = 'email@example.com'
+        email = 'hotrungdan3007@gmail.com'
         ## Co-authors information (optional)
         coauthor = [
             {name = "A.N. Other", bio = "This quick paragraph is written in site configuration (hugo.toml). Therefore, no markdown support. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" >
+  <channel>
+    <title>Categories on niddalA</title>
+    <link>http://localhost:1313/hugo-brewm/en/categories/</link>
+    <description>Recent Posts in Categories on niddalA</description>
+    <generator>Hugo 0.160.1</generator>
+    <language>en-us</language>
+    <managingEditor>hotrungdan3007@gmail.com (niddalA)</managingEditor>
+    <webMaster>hotrungdan3007@gmail.com (niddalA)</webMaster>
+    <lastBuildDate>Fri, 17 Apr 2026 12:59:39 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/hugo-brewm/en/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/hugo-brewm/es-mx/categories/index.xml" hreflang="es-mx" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/hugo-brewm/fr/categories/index.xml" hreflang="fr" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/hugo-brewm/id/categories/index.xml" hreflang="id" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/hugo-brewm/es/categories/index.xml" hreflang="es" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/hugo-brewm/ca/categories/index.xml" hreflang="ca" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/hugo-brewm/hi/categories/index.xml" hreflang="hi" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/hugo-brewm/de/categories/index.xml" hreflang="de" rel="alternate" type="application/rss&#43;xml" />
+        
+    <item>
+      <title>Authoring</title>
+      <link>http://localhost:1313/hugo-brewm/en/categories/authoring/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/hugo-brewm/en/categories/authoring/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+  </channel>
+</rss>
