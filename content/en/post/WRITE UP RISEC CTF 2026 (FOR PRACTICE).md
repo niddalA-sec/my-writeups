@@ -1,7 +1,6 @@
-
 ---
 title: "WRITE UP RISEC CTF 2026"
-date: 06/04/2026
+date: 2026-04-06
 description: "Writes up Risec CTF 2026 - PWN"
 draft: false
 author: "niddalA"
@@ -10,7 +9,6 @@ categories: ["Writeups"]
 cover: 'https://ctf.ritsec.club/assets/images/ritsec-26_logo.png'
 stage: 'evergreen'
 ---
-
 # WRITE UP RISEC CTF 2026 (FOR PRACTICE)
 Author: niddalA
 Date: 06/04/2026
