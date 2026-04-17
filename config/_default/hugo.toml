@@ -8,6 +8,7 @@ theme = 'hugo-brewm'
 enableGitInfo = true
 ## Convert all URLs to absolute URLs
 canonifyURLs = true
+relativeURLs = true
 ## Default language for content
 defaultContentLanguage = 'en'
 ## Put default language in subdirectory

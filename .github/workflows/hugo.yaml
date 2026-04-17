@@ -29,7 +29,6 @@ jobs:
       - name: Build with Hugo
         run: hugo --minify
 
-      # --- BƯỚC QUAN TRỌNG ĐỂ HIỆN KHUNG SEARCH ---
       - name: Index with Pagefind
         run: npx pagefind --site public
 
