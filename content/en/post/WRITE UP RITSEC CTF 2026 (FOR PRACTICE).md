@@ -14,30 +14,38 @@ type: "post"
 image: "/images/avatar.jpg"
 ---
 <style>
-  /* 1. Chỉ phóng to ảnh trong nội dung, KHÔNG phóng to avatar */
-  article img:not([class*="avatar"]) {
+  /* 1. Chỉ bung rộng những ảnh thực sự nằm trong nội dung bài viết */
+  /* Loại trừ avatar dựa trên cấu trúc common của theme Brewm */
+  article .post-content img, 
+  article section img {
     width: 100% !important;
     height: auto !important;
     display: block;
     margin: 20px auto;
   }
 
-  /* 2. Ép avatar giữ nguyên hình dáng ban đầu */
-  img[class*="avatar"], .author-photo img {
-    width: 80px !important;  /* Hoặc kích thước bạn muốn */
-    height: 80px !important;
-    object-fit: cover;
-    border-radius: 50%;
+  /* 2. Khống chế cái avatar quay về kích thước bình thường */
+  /* Chúng ta nhắm vào thẻ bao quanh avatar */
+  #body-header img, 
+  .author-photo img, 
+  header img,
+  img[src*="author"], 
+  img[alt*="niddalA"] { 
+    width: 80px !important;   /* Độ rộng vừa phải cho avatar */
+    height: 80px !important;  /* Chiều cao tương ứng */
+    max-width: 80px !important;
+    border-radius: 50% !important; /* Giữ ảnh hình tròn */
+    object-fit: cover !important;
+    display: inline-block !important; /* Trả về dạng inline để không chiếm hết dòng */
+    margin: 0 !important;
   }
 
-  /* 3. Bỏ thụt lề và cho chữ vươn hết chiều ngang bài viết */
+  /* 3. Đảm bảo chữ vẫn vươn hết dòng như cũ */
   article p, article li {
     text-indent: 0 !important;
     max-width: 100% !important;
     width: 100% !important;
     text-align: left !important;
-    padding-left: 0 !important;
-    margin-left: 0 !important;
   }
 </style>
 # WRITE UP RISEC CTF 2026 (FOR PRACTICE)
