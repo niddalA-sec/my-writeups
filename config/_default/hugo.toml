@@ -228,9 +228,6 @@ enableRobotsTXT = true
         sans = 'be vietnam pro'
         ## use typeface stored in local server (pleaase download font's uri first)
         localHost = false
-    [params.favicon]
-        src = "/my-writeups/favicon.ico"
-    ## Extended Metadata and  Social card configuration
     [params.socialCard]
         ## Enable twitter and opengraph social cards (same .params.extMeta setting)
         enable = true
