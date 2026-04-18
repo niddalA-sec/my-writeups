@@ -48,7 +48,7 @@ image: "/images/avatar.jpg"
 </style>
 # WRITE UP b01lers CTF 2026
 ## 1. pwn\transmutation
-![alt text](/post/write-up-b01lers-ctf-2026/image.png)
+![alt text](/post/write-up-b01lers-ctf-2026/anh-bai-1.png)
 Sau khi giải nén file ta được:
 ![alt text](/post/write-up-b01lers-ctf-2026/image-1.png)
 ![alt text](/post/write-up-b01lers-ctf-2026/image-2.png)
