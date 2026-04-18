@@ -7,7 +7,7 @@ theme = 'hugo-brewm'
 ## Enable Git information for pages, (e.g. lastMod date information)
 enableGitInfo = false
 ## Convert all URLs to absolute URLs
-canonifyURLs = true
+canonifyURLs = false
 relativeURLs = true
 ## Default language for content
 defaultContentLanguage = 'en'
