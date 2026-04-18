@@ -130,7 +130,6 @@ enableRobotsTXT = true
     DisableFootBar = false
     ## Merge site license, footer menu and coffee stat
     unifiedFooter = true
-    favicon = "favicon.ico"
 
     ## Author information
     [params.author]
