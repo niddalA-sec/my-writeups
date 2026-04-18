@@ -141,7 +141,7 @@ chạy `objdump -d chall -M intel`:
 Vì ta có thể sửa index nào trong hàm chall
 Ở đây tôi đã thử 3 trưởng hợp:
 1. Đổi `401176:       7d 14                   jge    40118c <chall+0x46>` 
-Cơ chế của dòng lệnh này là không thực thi lệnh nhảy với điều kiện `<=` và nhảy xuống địa chỉ cách địa chỉ này `0x14`
+Cơ chế của dòng lệnh này là thực thi lệnh nhảy với điều kiện `<=` và nhảy xuống địa chỉ cách địa chỉ này `0x14`
 => Nhảy đến đây: `40118c:       90                      nop`
 ta thấy 7d là lệnh jge còn 14 là tham số ta muốn nhảy
 Để thay đổi được 14 ta tính `Index = 0x401177 - 0x401146 = 0x31` tương đương với Index 49 
