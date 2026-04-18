@@ -108,6 +108,7 @@ enableRobotsTXT = true
 ## Site parameters
 [params]
     ## Site title
+    appTitle = "niddalA"
     title = "niddalA"
     ## Site description
     description = "An ExampleSite built with Hugo and Hugo-Brewm theme"
