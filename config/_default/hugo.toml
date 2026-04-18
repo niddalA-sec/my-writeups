@@ -222,9 +222,9 @@ enableRobotsTXT = true
         ## Use web safe fonts (will overide font selection below)
         webSafe = false
         ## Serif font selection
-        roman = 'crimson'
+        roman = 'be vietnam pro'
         ## Sans-serif font selection
-        sans = 'be vietnam pro'
+        sans = 'inter'
         ## use typeface stored in local server (pleaase download font's uri first)
         localHost = false
 
