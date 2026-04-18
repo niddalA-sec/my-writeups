@@ -129,6 +129,7 @@ enableRobotsTXT = true
     DisableFootBar = false
     ## Merge site license, footer menu and coffee stat
     unifiedFooter = true
+    favicon = "favicon.ico"
 
     ## Author information
     [params.author]
@@ -222,9 +223,9 @@ enableRobotsTXT = true
         ## Use web safe fonts (will overide font selection below)
         webSafe = false
         ## Serif font selection
-        roman = 'be vietnam pro'
+        roman = 'inter'
         ## Sans-serif font selection
-        sans = 'inter'
+        sans = 'be vietnam pro'
         ## use typeface stored in local server (pleaase download font's uri first)
         localHost = false
 
