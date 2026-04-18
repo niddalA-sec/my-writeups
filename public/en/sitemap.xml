@@ -2,22 +2,89 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/my-writeups/author/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/author/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/author/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/author/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/author/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/author/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/author/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/author/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/author/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/tags/b01lers-ctf/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/tags/binary-exploitation/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/categories/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/categories/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/categories/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/categories/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/categories/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/categories/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/categories/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/categories/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/categories/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/tags/ctf/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/stage/evergreen/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/evergreen/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/stage/evergreen/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/author/author-name/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/post/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/tags/pwn/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/stage/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/stage/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/stage/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/tags/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/tags/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/tags/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/tags/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/tags/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/tags/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/tags/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/tags/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/tags/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/post/write-yp-b01lers-ctf-2026/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/categories/writeups/</loc>
+    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
+    </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/tags/risec-ctf/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+    </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+    </url>
+  <url>
     <loc>http://localhost:1313/my-writeups/en/</loc>
     <lastmod>2026-02-06T13:56:01-08:00</lastmod>
     <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/" />
-  </url>
-  <url>
-    <loc>http://localhost:1313/my-writeups/author/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/author/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/author/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/author/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/author/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/author/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/author/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/author/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/author/" />
-  </url>
-  <url>
-    <loc>http://localhost:1313/my-writeups/categories/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/categories/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/categories/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/categories/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/categories/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/categories/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/categories/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/categories/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/categories/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/tufte-features/</loc>
@@ -25,72 +92,62 @@
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/tufte-features/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2026-02-06T13:56:01-08:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/categories/latex/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2026-02-06T13:56:01-08:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/</loc>
     <lastmod>2026-02-06T13:56:01-08:00</lastmod>
     <changefreq>always</changefreq>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/categories/authoring/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/authoring/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/</loc>
     <lastmod>2026-01-29T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/authoring-fullscreen-content/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-fullscreen-content/" />
+    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-fullscreen-content/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/content/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/damn/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/map/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/media/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
     </url>
-  <url>
-    <loc>http://localhost:1313/my-writeups/tags/pwn/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    </url>
-  <url>
-    <loc>http://localhost:1313/my-writeups/tags/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/tags/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/tags/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/tags/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/tags/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/tags/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/tags/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/tags/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/tags/" />
-  </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/fullscreen-example/</loc>
     <lastmod>2026-01-28T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/fullscreen-example/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/authoring-custom-taxonomy/</loc>
@@ -98,47 +155,49 @@
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/authoring-custom-taxonomy/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-07-28T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/dreamhack/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-07-28T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/taxonomy/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-07-28T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
     </url>
   <url>
-    <loc>http://localhost:1313/my-writeups/tags/aaaaaaaaaaa/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    </url>
-  <url>
     <loc>http://localhost:1313/my-writeups/tags/alt/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/audio/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/" />
+    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/my-writeups/stage/budding/</loc>
+    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/stage/budding/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/budding/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/budding/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/stage/budding/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/cover/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/gambar/</loc>
@@ -146,7 +205,7 @@
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/images/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/konten/</loc>
@@ -155,62 +214,66 @@
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-fullscreen-content/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-cover-images-and-audio-article/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-cover-images-and-audio-article/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-sampul-dan-audio/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/sampul/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
     </url>
   <url>
+    <loc>http://localhost:1313/my-writeups/author/a.n.-other/</loc>
+    <lastmod>2025-02-03T00:00:00+00:00</lastmod>
+    </url>
+  <url>
     <loc>http://localhost:1313/my-writeups/en/post/authoring-terms-entry/</loc>
     <lastmod>2025-02-03T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-terms-entry/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-entri-terms/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-terms-entry/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-terms-entry/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-entri-terms/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-terms-entry/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/authoring-terms-entry/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-terms-entry/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-entri-terms/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-terms-entry/" />
+    <lastmod>2025-02-03T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-terms-entry/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-entri-terms/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-terms-entry/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/authoring-redaction-history/</loc>
     <lastmod>2025-02-03T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-redaction-history/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-riwayat-redaksi/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-redaction-history/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-redaction-history/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-riwayat-redaksi/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-redaction-history/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/authoring-redaction-history/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-redaction-history/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-riwayat-redaksi/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-redaction-history/" />
+    <lastmod>2025-02-03T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-redaction-history/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-riwayat-redaksi/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-redaction-history/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/history/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-02-03T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/mengatur-entri-terms/</loc>
     <lastmod>2025-02-03T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-terms-entry/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-terms-entry/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-entri-terms/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-terms-entry/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-terms-entry/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-entri-terms/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/mengatur-riwayat-redaksi/</loc>
     <lastmod>2025-02-03T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/authoring-redaction-history/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/authoring-redaction-history/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-riwayat-redaksi/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/authoring-redaction-history/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/authoring-redaction-history/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-riwayat-redaksi/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/redaction/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-02-03T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/redaksi/</loc>
@@ -221,8 +284,14 @@
     <lastmod>2025-02-03T00:00:00+00:00</lastmod>
     </url>
   <url>
+    <loc>http://localhost:1313/my-writeups/stage/seedling/</loc>
+    <lastmod>2025-02-03T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/stage/seedling/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/seedling/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/seedling/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/stage/seedling/" />
+  </url>
+  <url>
     <loc>http://localhost:1313/my-writeups/tags/terms/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-02-03T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/accent/</loc>
@@ -234,83 +303,83 @@
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/categories/configuration/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-02-21T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/configuration/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-02-21T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/configure-discussion/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-discussion/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-diskusi/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-discussion/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-discussion/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-diskusi/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-discussion/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/configure-discussion/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-discussion/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-diskusi/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-discussion/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-discussion/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-diskusi/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-discussion/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/configure-slides/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-slides/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-slide/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-slides/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-slides/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-slide/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-slides/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/configure-slides/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-slides/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-slide/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-slides/" />
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-slides/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-slide/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-slides/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/configure-logo-and-accent-color/</loc>
     <lastmod>2025-02-21T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-logo-and-accent-color/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-logo-dan-aksen-warna/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-logo-and-accent-color/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-logo-and-accent-color/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-logo-dan-aksen-warna/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-logo-and-accent-color/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/configure-logo-and-accent-color/</loc>
     <lastmod>2025-02-21T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-logo-and-accent-color/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-logo-dan-aksen-warna/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-logo-and-accent-color/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-logo-and-accent-color/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-logo-dan-aksen-warna/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-logo-and-accent-color/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/configure-main-footer/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-main-footer/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-footer-situs/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-main-footer/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-main-footer/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-footer-situs/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-main-footer/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/configure-main-footer/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-main-footer/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-footer-situs/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-main-footer/" />
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-main-footer/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-footer-situs/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-main-footer/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/configure-menu/</loc>
     <lastmod>2025-02-04T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-menu/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-menu/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-menu/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-menu/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-menu/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-menu/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/configure-menu/</loc>
     <lastmod>2025-02-04T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-menu/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-menu/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-menu/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-menu/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-menu/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-menu/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/configure-pagefind/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-pagefind/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-pagefind/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-pagefind/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-pagefind/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-pagefind/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-pagefind/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/configure-pagefind/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-pagefind/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-pagefind/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-pagefind/" />
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-pagefind/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-pagefind/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-pagefind/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/discussion/</loc>
@@ -318,11 +387,11 @@
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/footer/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/categories/homepage/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/logo/</loc>
@@ -330,55 +399,55 @@
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/markdown/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/post/markdown-test/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/markdown-test/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/tes-markdown/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/markdown-test/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/markdown-test/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/tes-markdown/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/markdown-test/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/post/markdown-test/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/markdown-test/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/tes-markdown/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/markdown-test/" />
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/markdown-test/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/tes-markdown/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/markdown-test/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/mengatur-diskusi/</loc>
     <lastmod>2025-02-03T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-discussion/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-discussion/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-diskusi/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-discussion/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-discussion/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-diskusi/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/mengatur-footer-situs/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-main-footer/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-main-footer/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-footer-situs/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-main-footer/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-main-footer/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-footer-situs/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/mengatur-logo-dan-aksen-warna/</loc>
     <lastmod>2025-02-21T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-logo-and-accent-color/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-logo-and-accent-color/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-logo-dan-aksen-warna/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-logo-and-accent-color/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-logo-and-accent-color/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-logo-dan-aksen-warna/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/mengatur-menu/</loc>
     <lastmod>2025-02-04T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-menu/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-menu/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-menu/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-menu/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-menu/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-menu/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/mengatur-pagefind/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-pagefind/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-pagefind/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-pagefind/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-pagefind/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-pagefind/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-pagefind/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/mengatur-slide/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/configure-slides/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/configure-slides/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/mengatur-slide/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/configure-slides/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/configure-slides/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/mengatur-slide/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/menu/</loc>
@@ -386,35 +455,21 @@
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/pagefind/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/tags/slide/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/id/pos/tes-markdown/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/markdown-test/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/markdown-test/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/tes-markdown/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/post/markdown-test/" /><xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/post/markdown-test/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/id/pos/tes-markdown/" />
   </url>
-  <url>
-    <loc>http://localhost:1313/my-writeups/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/" /><xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/" />
-  </url>
-  <url>
-    <loc>http://localhost:1313/my-writeups/author/a.n.-other/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/author/a.n.-other/</loc>
     
-    </url>
-  <url>
-    <loc>http://localhost:1313/my-writeups/author/author-name/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
     </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/author/author-name/</loc>
@@ -423,62 +478,39 @@
   <url>
     <loc>http://localhost:1313/my-writeups/en/stage/budding/</loc>
     
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/budding/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/budding/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/budding/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/budding/" />
-  </url>
-  <url>
-    <loc>http://localhost:1313/my-writeups/stage/budding/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/budding/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/budding/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/budding/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/budding/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/stage/budding/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/budding/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/budding/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/stage/budding/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/stage/evergreen/</loc>
     
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/evergreen/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/evergreen/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/evergreen/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/stage/evergreen/" />
   </url>
   <url>
-    <loc>http://localhost:1313/my-writeups/stage/evergreen/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/evergreen/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/evergreen/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/evergreen/" />
-  </url>
+    <loc>http://localhost:1313/my-writeups/author/author-name/niddala/</loc>
+    
+    </url>
   <url>
-    <loc>http://localhost:1313/my-writeups/post/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <changefreq>always</changefreq>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/post/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/id/pos/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/post/" />
-  </url>
+    <loc>http://localhost:1313/my-writeups/author/niddala/</loc>
+    
+    </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/stage/seedling/</loc>
     
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/seedling/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/seedling/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/seedling/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/seedling/" />
-  </url>
-  <url>
-    <loc>http://localhost:1313/my-writeups/stage/seedling/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/seedling/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/seedling/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/seedling/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/seedling/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/stage/seedling/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/seedling/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/seedling/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/stage/seedling/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/series/</loc>
     
     <xhtml:link rel="alternate" hreflang="es-MX" href="http://localhost:1313/my-writeups/es-mx/series/" /><xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/series/" /><xhtml:link rel="alternate" hreflang="hi-IN" href="http://localhost:1313/my-writeups/hi/series/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/series/" /><xhtml:link rel="alternate" hreflang="ca-ES" href="http://localhost:1313/my-writeups/ca/series/" /><xhtml:link rel="alternate" hreflang="de-DE" href="http://localhost:1313/my-writeups/de/series/" /><xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/my-writeups/es/series/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/series/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/series/" />
   </url>
   <url>
     <loc>http://localhost:1313/my-writeups/en/stage/</loc>
     
-    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/" />
-  </url>
-  <url>
-    <loc>http://localhost:1313/my-writeups/stage/</loc>
-    <lastmod>2026-04-17T12:18:05+07:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/" /><xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/en/stage/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="http://localhost:1313/my-writeups/stage/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/stage/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/stage/" /><xhtml:link rel="alternate" hreflang="id-ID" href="http://localhost:1313/my-writeups/id/en/stage/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="http://localhost:1313/my-writeups/en/stage/" />
   </url>
 </urlset>

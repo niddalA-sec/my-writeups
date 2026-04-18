@@ -1,6 +1,16 @@
 
 {
     "nodes": [{
+                "id": "434f2f7c69897db48859df7fe6aee572",
+                "title": "WRITE UP b01lers CTF 2026",
+                "permalink": "http://localhost:1313/my-writeups/post/write-yp-b01lers-ctf-2026/",
+                "type": "post"
+            },{
+                "id": "43735c143cdeafacae4a0cbd95a9c168",
+                "title": "WRITE UP RITSEC CTF 2026",
+                "permalink": "http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/",
+                "type": "post"
+            },{
                 "id": "14377eca56661a3b0c30e92d20f1745f",
                 "title": "Hugo-Tufte Features compatibility",
                 "permalink": "http://localhost:1313/my-writeups/en/post/tufte-features/",
@@ -201,10 +211,10 @@
                             "type": "categories"
                         },
                         {
-                            "id": "tags-aaaaaaaaaaa",
-                            "title": "Aaaaaaaaaaa",
-                            "permalink": "http://localhost:1313/my-writeups/tags/aaaaaaaaaaa/",
-                            "type": "tags"
+                            "id": "categories-writeups",
+                            "title": "Writeups",
+                            "permalink": "http://localhost:1313/my-writeups/categories/writeups/",
+                            "type": "categories"
                         },
                         {
                             "id": "tags-accent",
@@ -231,6 +241,18 @@
                             "type": "tags"
                         },
                         {
+                            "id": "tags-b01lers-ctf",
+                            "title": "B01lers CTF",
+                            "permalink": "http://localhost:1313/my-writeups/tags/b01lers-ctf/",
+                            "type": "tags"
+                        },
+                        {
+                            "id": "tags-binary-exploitation",
+                            "title": "Binary Exploitation",
+                            "permalink": "http://localhost:1313/my-writeups/tags/binary-exploitation/",
+                            "type": "tags"
+                        },
+                        {
                             "id": "tags-color",
                             "title": "Color",
                             "permalink": "http://localhost:1313/my-writeups/tags/color/",
@@ -252,6 +274,12 @@
                             "id": "tags-cover",
                             "title": "Cover",
                             "permalink": "http://localhost:1313/my-writeups/tags/cover/",
+                            "type": "tags"
+                        },
+                        {
+                            "id": "tags-ctf",
+                            "title": "CTF",
+                            "permalink": "http://localhost:1313/my-writeups/tags/ctf/",
                             "type": "tags"
                         },
                         {
@@ -357,6 +385,12 @@
                             "type": "tags"
                         },
                         {
+                            "id": "tags-risec-ctf",
+                            "title": "Risec CTF",
+                            "permalink": "http://localhost:1313/my-writeups/tags/risec-ctf/",
+                            "type": "tags"
+                        },
+                        {
                             "id": "tags-riwayat",
                             "title": "Riwayat",
                             "permalink": "http://localhost:1313/my-writeups/tags/riwayat/",
@@ -388,6 +422,44 @@
                         },
     ],
     "links": [
+            
+                    {
+                        "source": "434f2f7c69897db48859df7fe6aee572",
+                        "target": "categories-writeups",
+                    },
+                    {
+                        "source": "434f2f7c69897db48859df7fe6aee572",
+                        "target": "tags-ctf",
+                    },
+                    {
+                        "source": "434f2f7c69897db48859df7fe6aee572",
+                        "target": "tags-pwn",
+                    },
+                    {
+                        "source": "434f2f7c69897db48859df7fe6aee572",
+                        "target": "tags-binary-exploitation",
+                    },
+                    {
+                        "source": "434f2f7c69897db48859df7fe6aee572",
+                        "target": "tags-b01lers-ctf",
+                    },
+            
+                    {
+                        "source": "43735c143cdeafacae4a0cbd95a9c168",
+                        "target": "categories-writeups",
+                    },
+                    {
+                        "source": "43735c143cdeafacae4a0cbd95a9c168",
+                        "target": "tags-ctf",
+                    },
+                    {
+                        "source": "43735c143cdeafacae4a0cbd95a9c168",
+                        "target": "tags-pwn",
+                    },
+                    {
+                        "source": "43735c143cdeafacae4a0cbd95a9c168",
+                        "target": "tags-risec-ctf",
+                    },
             
                     {
                         "source": "14377eca56661a3b0c30e92d20f1745f",
@@ -506,7 +578,7 @@
                     },
                     {
                         "source": "873ba95f40751c50553ab2667dc36c7c",
-                        "target": "tags-aaaaaaaaaaa",
+                        "target": "tags-authoring",
                     },
                     {
                         "source": "873ba95f40751c50553ab2667dc36c7c",

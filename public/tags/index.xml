@@ -5,13 +5,11 @@
     <link>http://localhost:1313/my-writeups/tags/</link>
     <description>Recent Posts in Tags on niddalA</description>
     <generator>Hugo 0.160.1</generator>
-    <language>en-us</language>
+    <language>en-GB</language>
     <managingEditor>hotrungdan3007@gmail.com (niddalA)</managingEditor>
     <webMaster>hotrungdan3007@gmail.com (niddalA)</webMaster>
-    <lastBuildDate>Fri, 17 Apr 2026 13:17:20 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 13:50:15 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/my-writeups/tags/index.xml" rel="self" type="application/rss+xml" />
-        <atom:link href="http://localhost:1313/my-writeups/es/tags/index.xml" hreflang="es" rel="alternate" type="application/rss&#43;xml" />
-        
         <atom:link href="http://localhost:1313/my-writeups/es-mx/tags/index.xml" hreflang="es-mx" rel="alternate" type="application/rss&#43;xml" />
         
         <atom:link href="http://localhost:1313/my-writeups/fr/tags/index.xml" hreflang="fr" rel="alternate" type="application/rss&#43;xml" />
@@ -24,6 +22,58 @@
         
         <atom:link href="http://localhost:1313/my-writeups/de/tags/index.xml" hreflang="de" rel="alternate" type="application/rss&#43;xml" />
         
+        <atom:link href="http://localhost:1313/my-writeups/es/tags/index.xml" hreflang="es" rel="alternate" type="application/rss&#43;xml" />
+        
+    <item>
+      <title>B01lers CTF</title>
+      <link>http://localhost:1313/my-writeups/tags/b01lers-ctf/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/tags/b01lers-ctf/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+    <item>
+      <title>Binary Exploitation</title>
+      <link>http://localhost:1313/my-writeups/tags/binary-exploitation/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/tags/binary-exploitation/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+    <item>
+      <title>CTF</title>
+      <link>http://localhost:1313/my-writeups/tags/ctf/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/tags/ctf/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+    <item>
+      <title>PWN</title>
+      <link>http://localhost:1313/my-writeups/tags/pwn/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/tags/pwn/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
+    <item>
+      <title>Risec CTF</title>
+      <link>http://localhost:1313/my-writeups/tags/risec-ctf/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/tags/risec-ctf/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
     <item>
       <title>Authoring</title>
       <link>http://localhost:1313/my-writeups/tags/authoring/</link>
@@ -75,16 +125,6 @@
       <content:encoded></content:encoded>
     </item>
     <item>
-      <title>PWN</title>
-      <link>http://localhost:1313/my-writeups/tags/pwn/</link>
-      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-      <author>hotrungdan3007@gmail.com (niddalA)</author>
-      <dc:creator>niddalA</dc:creator>
-      <guid>http://localhost:1313/my-writeups/tags/pwn/</guid>
-      <description></description>
-      <content:encoded></content:encoded>
-    </item>
-    <item>
       <title>Dreamhack</title>
       <link>http://localhost:1313/my-writeups/tags/dreamhack/</link>
       <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
@@ -101,16 +141,6 @@
       <author>hotrungdan3007@gmail.com (niddalA)</author>
       <dc:creator>niddalA</dc:creator>
       <guid>http://localhost:1313/my-writeups/tags/taxonomy/</guid>
-      <description></description>
-      <content:encoded></content:encoded>
-    </item>
-    <item>
-      <title>Aaaaaaaaaaa</title>
-      <link>http://localhost:1313/my-writeups/tags/aaaaaaaaaaa/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <author>hotrungdan3007@gmail.com (niddalA)</author>
-      <dc:creator>niddalA</dc:creator>
-      <guid>http://localhost:1313/my-writeups/tags/aaaaaaaaaaa/</guid>
       <description></description>
       <content:encoded></content:encoded>
     </item>
@@ -152,7 +182,6 @@
       <dc:creator>niddalA</dc:creator>
       <guid>http://localhost:1313/my-writeups/tags/gambar/</guid>
       <description></description>
-      <content:encoded></content:encoded>
     </item>
     <item>
       <title>Images</title>
@@ -162,7 +191,6 @@
       <dc:creator>niddalA</dc:creator>
       <guid>http://localhost:1313/my-writeups/tags/images/</guid>
       <description></description>
-      <content:encoded></content:encoded>
     </item>
     <item>
       <title>Konten</title>
@@ -172,7 +200,6 @@
       <dc:creator>niddalA</dc:creator>
       <guid>http://localhost:1313/my-writeups/tags/konten/</guid>
       <description></description>
-      <content:encoded></content:encoded>
     </item>
     <item>
       <title>Sampul</title>

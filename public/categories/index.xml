@@ -5,17 +5,11 @@
     <link>http://localhost:1313/my-writeups/categories/</link>
     <description>Recent Posts in Categories on niddalA</description>
     <generator>Hugo 0.160.1</generator>
-    <language>en-us</language>
+    <language>en-GB</language>
     <managingEditor>hotrungdan3007@gmail.com (niddalA)</managingEditor>
     <webMaster>hotrungdan3007@gmail.com (niddalA)</webMaster>
-    <lastBuildDate>Fri, 17 Apr 2026 13:17:20 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 13:50:15 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/my-writeups/categories/index.xml" rel="self" type="application/rss+xml" />
-        <atom:link href="http://localhost:1313/my-writeups/de/categories/index.xml" hreflang="de" rel="alternate" type="application/rss&#43;xml" />
-        
-        <atom:link href="http://localhost:1313/my-writeups/es/categories/index.xml" hreflang="es" rel="alternate" type="application/rss&#43;xml" />
-        
-        <atom:link href="http://localhost:1313/my-writeups/es-mx/categories/index.xml" hreflang="es-mx" rel="alternate" type="application/rss&#43;xml" />
-        
         <atom:link href="http://localhost:1313/my-writeups/fr/categories/index.xml" hreflang="fr" rel="alternate" type="application/rss&#43;xml" />
         
         <atom:link href="http://localhost:1313/my-writeups/hi/categories/index.xml" hreflang="hi" rel="alternate" type="application/rss&#43;xml" />
@@ -24,6 +18,22 @@
         
         <atom:link href="http://localhost:1313/my-writeups/ca/categories/index.xml" hreflang="ca" rel="alternate" type="application/rss&#43;xml" />
         
+        <atom:link href="http://localhost:1313/my-writeups/de/categories/index.xml" hreflang="de" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/es/categories/index.xml" hreflang="es" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/es-mx/categories/index.xml" hreflang="es-mx" rel="alternate" type="application/rss&#43;xml" />
+        
+    <item>
+      <title>Writeups</title>
+      <link>http://localhost:1313/my-writeups/categories/writeups/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <author>hotrungdan3007@gmail.com (niddalA)</author>
+      <dc:creator>niddalA</dc:creator>
+      <guid>http://localhost:1313/my-writeups/categories/writeups/</guid>
+      <description></description>
+      <content:encoded></content:encoded>
+    </item>
     <item>
       <title>Latex</title>
       <link>http://localhost:1313/my-writeups/categories/latex/</link>

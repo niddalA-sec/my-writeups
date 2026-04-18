@@ -8,9 +8,13 @@
     <language>de-DE</language>
     <managingEditor>hotrungdan3007@gmail.com (niddalA)</managingEditor>
     <webMaster>hotrungdan3007@gmail.com (niddalA)</webMaster>
-    <lastBuildDate>Fri, 17 Apr 2026 13:17:19 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 13:50:15 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/my-writeups/de/author/index.xml" rel="self" type="application/rss+xml" />
         <atom:link href="http://localhost:1313/my-writeups/author/index.xml" hreflang="en" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/fr/author/index.xml" hreflang="fr" rel="alternate" type="application/rss&#43;xml" />
+        
+        <atom:link href="http://localhost:1313/my-writeups/hi/author/index.xml" hreflang="hi" rel="alternate" type="application/rss&#43;xml" />
         
         <atom:link href="http://localhost:1313/my-writeups/id/author/index.xml" hreflang="id" rel="alternate" type="application/rss&#43;xml" />
         
@@ -19,10 +23,6 @@
         <atom:link href="http://localhost:1313/my-writeups/es/author/index.xml" hreflang="es" rel="alternate" type="application/rss&#43;xml" />
         
         <atom:link href="http://localhost:1313/my-writeups/es-mx/author/index.xml" hreflang="es-mx" rel="alternate" type="application/rss&#43;xml" />
-        
-        <atom:link href="http://localhost:1313/my-writeups/fr/author/index.xml" hreflang="fr" rel="alternate" type="application/rss&#43;xml" />
-        
-        <atom:link href="http://localhost:1313/my-writeups/hi/author/index.xml" hreflang="hi" rel="alternate" type="application/rss&#43;xml" />
         
   </channel>
 </rss>

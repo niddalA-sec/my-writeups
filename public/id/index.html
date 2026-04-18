@@ -12,7 +12,7 @@
 <meta name="description" content="An ExampleSite built with Hugo and Hugo-Brewm theme" >
 <meta name="keywords" content="Beranda">
 <link rel="canonical" href="http://localhost:1313/my-writeups/id/">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/my-writeups/" title="English"><link rel="alternate" hreflang="de" href="http://localhost:1313/my-writeups/de/" title="Deutsch"><link rel="alternate" hreflang="es" href="http://localhost:1313/my-writeups/es/" title="Español"><link rel="alternate" hreflang="es-mx" href="http://localhost:1313/my-writeups/es-mx/" title="Español (México)"><link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/" title="French"><link rel="alternate" hreflang="hi" href="http://localhost:1313/my-writeups/hi/" title="हिन्दी"><link rel="alternate" hreflang="ca" href="http://localhost:1313/my-writeups/ca/" title="Català">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/my-writeups/" title="English"><link rel="alternate" hreflang="hi" href="http://localhost:1313/my-writeups/hi/" title="हिन्दी"><link rel="alternate" hreflang="ca" href="http://localhost:1313/my-writeups/ca/" title="Català"><link rel="alternate" hreflang="de" href="http://localhost:1313/my-writeups/de/" title="Deutsch"><link rel="alternate" hreflang="es" href="http://localhost:1313/my-writeups/es/" title="Español"><link rel="alternate" hreflang="es-mx" href="http://localhost:1313/my-writeups/es-mx/" title="Español (México)"><link rel="alternate" hreflang="fr" href="http://localhost:1313/my-writeups/fr/" title="French">
 
 
     
@@ -126,7 +126,7 @@
     <div id="search" class="on-hull">
         <div role="presentation" class="screening js-cgpn"></div>
     </div>
-    <script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script src="../pagefind/pagefind-ui.js" type="text/javascript"></script>
     <script>
         let pageFindInitialized = false;
         const initPageFind = function(event) {
@@ -186,8 +186,20 @@
                 <ul class="on-plank">
                         <li>
                             <a href="http://localhost:1313/my-writeups/" aria-label="Change language to English">
-                                <span class="emoji">🇺🇸&nbsp;</span>
+                                <span class="emoji">🇬🇧&nbsp;</span>
                                 <span class="languangeName">English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/hi/" aria-label="Change language to हिन्दी">
+                                <span class="emoji">🇮🇳&nbsp;</span>
+                                <span class="languangeName">हिन्दी</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/my-writeups/ca/" aria-label="Change language to Català">
+                                <span class="emoji">🇪🇸&nbsp;</span>
+                                <span class="languangeName">Català</span>
                             </a>
                         </li>
                         <li>
@@ -212,18 +224,6 @@
                             <a href="http://localhost:1313/my-writeups/fr/" aria-label="Change language to French">
                                 <span class="emoji">🇫🇷&nbsp;</span>
                                 <span class="languangeName">French</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:1313/my-writeups/hi/" aria-label="Change language to हिन्दी">
-                                <span class="emoji">🇮🇳&nbsp;</span>
-                                <span class="languangeName">हिन्दी</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:1313/my-writeups/ca/" aria-label="Change language to Català">
-                                <span class="emoji">🇪🇸&nbsp;</span>
-                                <span class="languangeName">Català</span>
                             </a>
                         </li>
                 </ul>
@@ -315,6 +315,17 @@
         </a>
     </nav>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    mediumZoom('img', {
+      margin: 24,
+      background: 'rgba(0,0,0,0.9)' 
+    })
+  });
+</script>
     
     <!-- [background] baseof.html -->
     <div id="background-body" role="presentation" aria-hidden="true"></div>
